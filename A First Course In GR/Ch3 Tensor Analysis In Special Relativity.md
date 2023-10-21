@@ -33,4 +33,9 @@
 - The result $\tilde{\omega}^{\alpha}(\vec{e}_{\beta})=\delta^{\alpha}_{\beta}$ implies that a one-form basis acts on a vector in such a way that the $\alpha th$ one-form basis acting on a vector picks out the $\alpha th$ component of the vector in that frame: $\tilde{\omega}^{\alpha}(\vec{A})= \tilde{\omega}^{\alpha}(A^{\beta}\vec{e_{\beta}}) =A^{\beta}\tilde{\omega}^{\alpha}(\vec{e}_{\beta})=A^{\beta}\delta^{\alpha}_{\beta}=A^{\alpha}$. Note that in a different frame, although the components of the vector would change, but so would the one-form basis.
 - By virtue of the above result, it is clear that the equation $\tilde{\omega}^{\alpha}(\vec{e}_{\beta})=\delta^{\alpha}_{\beta}$ signifies a relation between the sets {$\tilde{\omega}^{\alpha}$} and {$\vec{e}_{\beta}$}, rather then of individual pairs, since for example, changing the $\vec{e}_1$ basis vector would change the component in the direction of $\vec{e}_{2}$, and the same one-form basis $\tilde{\omega}^{2}$ acting on the same invariant vector would return a different result, which would not have been the case if $\tilde{\omega}^2$ was just related to $\vec{e}_{2}$, since $\vec{e}_{2}$ was left unchanged but $\tilde{\omega}^{2}$ changed.
 - Components alone are insufficient to describe a geometrical quantity. Given a set of components, for a complete description, it is necessary to further specify if the the components are those of a vector or a one-form, and further specify the basis being used.
-- 
+- The derivation for the transformation rule of one-form basis is analogous to those of the basis, and leads to the only equation that can be written down with the indices in their correct position: (same as components of a vector and opposite to one-form components and hence opposite to vector basis)
+- $$\tilde{\omega}^{\alpha'}=\Lambda^{\alpha'}_{\beta}\tilde{\omega}^{\beta}$$
+*Picture of a One-Form* 
+- A series of surfaces that slices space. Contraction is the number of surfaces a vector pierces when drawn in space that the one-form has sliced.
+- Does not define a unique direction in space, since it is not a vector. Rather, it defines a way of slicing space
+

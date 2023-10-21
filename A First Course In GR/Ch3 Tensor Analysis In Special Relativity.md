@@ -58,3 +58,21 @@ are the gradient One-Form's components in some frame $O$.
 		- Since the coordinates transform like $x^{\beta}= \Lambda^{\beta}_{\alpha'} x^{\alpha'}$, and $\Lambda^{\beta}_{\alpha'}$ are just constants (for 2 fixed frames), we can divide by $x^{\alpha'}$ and take the limit: $$\frac{\partial{x^{\beta}}}{{\partial{x^{\alpha'}}}} =\Lambda^{\beta}_{\alpha'}$$
 		to get this identity.
 		- Hence, the components of the gradient transform according to the inverse of the coordinates, (primed in terms of unprimed, with primed index being the lower one on Lambda). The gradient is the archetypal one-form.
+
+*Notation for Derivatives*
+- $\frac{\partial{\phi}}{ \partial{x}} \equiv \phi_{.x}$ 
+-  $\frac{\partial{\phi}}{ \partial{x^\alpha}} \equiv \phi_{,\alpha}$ 
+- To be consistent with the transformation properties, the superscript in the denominator is a subscript.
+- $x^{\alpha}_{,\beta} = \delta^{\alpha}_{\beta}$ 
+- Since the components of a vector are just scalars, the set of all $\alpha th$ components of a vector field is a scalar field. Hence, their gradient can be taken, which would be a one-form as we showed for a general scalar field: $\frac{\partial{x^{\alpha}}}{ \partial{x^{\beta}}} \equiv \tilde{d}x^{\alpha} \equiv x^{\alpha}_{,\beta} = \delta^{\alpha}_{\beta} \rightarrow$ $\tilde{d}x^{\alpha} \equiv \delta^{\alpha}_{\beta} \rightarrow$
+$$\tilde{d}x^{\alpha} \equiv \tilde{\omega}^{\alpha}$$
+- This result shows that the basis one-form is just $\tilde{d}x^{\alpha}$ ,the gradient of the coordinates.
+- For any function $f$, we know the components of the gradient One-Form are $\frac{\partial{f}}{ \partial{x^{\alpha}}}$. If we couple this with a one-form basis, we will get the complete One-Form. We found that the basis One-Forms are equivalent to the gradient One-Form of the coordinates, hence: $$\tilde{d}f = \frac{\partial{f}}{ \partial{x}} \tilde{d}x^{\alpha}$$
+- Although the notation has been chosen partly to suggest the physicists sloppy way of writing differentials, it is one-forms (tensors) instead that are present in the above equation. Tensors can have small value if acted on infinitesimal vectors.
+
+*Normal One-Forms* 
+- Like the gradient, the concept of normal vector requires a scalar product and hence a defined metric. However, the concept of a normal One-Form is more natural: it is the one-form that returns $0$ when acted upon any vector tangent to a surface. An outward normal one-form would further return a positive value for vectors that point outward from a surface.
+
+### 3.4 The $\begin{pmatrix}0\\ 2\end{pmatrix}$ Tensors
+
+

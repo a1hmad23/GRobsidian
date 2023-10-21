@@ -39,3 +39,9 @@
 - A series of surfaces that slices space. Contraction is the number of surfaces a vector pierces when drawn in space that the one-form has sliced.
 - Does not define a unique direction in space, since it is not a vector. Rather, it defines a way of slicing space
 
+*Derivative of a Function is a One-Form*
+- Consider a scalar field $\phi (\vec{x})$ defined at every event $\vec{x}$ (in spacetime) and a some particle in spacetime. The worldline of this particle encounters a value of the scalar field at every event.
+- The worldline can be parametrized by proper time $\tau$ (value of a clock moving on the line or the value of $-\sqrt{\Delta s^2}$ from some vantage point), through which the coordinates of events on the curve can be expressed as functions of $\tau$: $(t= t(\tau),x=x(\tau),y=y(\tau),z=z(\tau))$.
+- The 4-velocity has components $\vec{U} =(\frac{dt}{d \tau}, \frac{dx}{d \tau}, \frac{dy}{d \tau}, \frac{dz}{ d \tau})$.
+- Since $\phi$ is a function of $(t,x,y,x)$, which on the curve are functions of $\tau$, so $\phi$ is implicitly a function of $\tau$ on the curve: $\phi=\phi [t(\tau),x(\tau),y(\tau),z(\tau)]$ . Its rate of change on the curve is then: $$\frac{d \phi}{d \tau}=\frac{d\phi}{dt} \frac{dt}{d \tau} + \frac{d\phi}{dx} \frac{dx}{d \tau} +\frac{d\phi}{dy} \frac{dy}{d \tau} + \frac{d\phi}{dz} \frac{dz}{d \tau}\ \ =\ \ \frac{d\phi}{dt} U^{t} +\frac{d\phi}{dx} U^{x} +\frac{d\phi}{dy} U^{y} + \frac{d\phi}{dz} U^z$$
+- In the last equation, it is clear that we have devised a means of producing from the vector $\vec{U}$ the number $\frac{d\phi}{d \tau}$ that represents the rate of change of $\phi$ on a curve on which $\vec{U}$ is tangent. Moreover, it clearly is a linear function of $\vec{U}$ ($\alpha can \betat$)

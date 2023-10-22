@@ -76,17 +76,28 @@ $$\tilde{d}x^{\alpha} \equiv \tilde{\omega}^{\alpha}$$
 ### 3.4 The $\begin{pmatrix}0\\ 2\end{pmatrix}$ Tensors
 - Tensors (linear functions) of two vector arguments (that return a scalar), such as the metric tensor.
 - Can be formed from one-forms by a kind of product:
-	- If $\tilde{p}$ and $\tilde{q}$ are two one-forms, then the (tensor) product $\tilde{p} \otimes \tilde{q}$ is the $\begin{pmatrix}0 \\ 2\end{pmatrix}$ that when supplied with two vectors $\vec{A}, \vec{B}$ returns the value $\tilde{p}(\vec{A})\tilde{q}(\vec{B})$.
+	- If $\tilde{p}$ and $\tilde{q}$ are two one-forms, then the (outer) product $\tilde{p} \otimes \tilde{q}$ is the $\begin{pmatrix}0 \\ 2\end{pmatrix}$ tensor that when supplied with two vectors $\vec{A}, \vec{B}$ returns the value $\tilde{p}(\vec{A})\tilde{q}(\vec{B})$.
 	- The outer product $\otimes$ is not commutative:  $\tilde{p} \otimes \tilde{q}$ is different from $\tilde{q}\otimes \tilde{p}$ in that the first one returns $\tilde{p}(\vec{A})\tilde{q}(\vec{B})$ while the second one returns $\tilde{q}(\vec{A})\tilde{p}(\vec{B})$, that is, the vectors are supplied to different one-forms.
 
 *Components*
-- The most general $\begin{pmatrix}0\\2 \end{pmatrix}$ tensor is not a simple outer product, but it can be represented as a linear sum of such tensors. 
+- The most general $\begin{pmatrix}0\\2 \end{pmatrix}$ tensor is not a simple outer product, but it can be represented as a linear sum of such tensors (below). 
 - The components of a general $\begin{pmatrix}0\\2 \end{pmatrix}$ tensor are $f_{\alpha \beta}=$f$(\vec{e_{\alpha}},\vec{e_{\beta}})$. Since each index can have four values, there are 16 components (can be thought of as arrayed in a matrix).
-- The value of **f** on two arbitrary vectors is f$(\vec{A},\vec{B}) =$f$(A^{\alpha}\vec{e_{\alpha}},B^{\beta}\vec{e_{\beta}})=A^{\alpha}B^{\beta}$ f$(\vec{e_{\alpha}},\vec{e_{\beta}})=A^{\alpha}B^{\beta}f_{\alpha \beta}$ (contraction, the value of tensors when supplied with vectors is always a contraction of their components in whatever frame). Notice two different dummy indices are used to keep track of two different summations.
-- A basis for these tensors would have to be a(for each of the 16 components) 16 element set {$\tilde{w}^{\alpha \beta}$} such that f$=f_{\alpha \beta}\tilde{\omega}^{\alpha \beta}$.
+- The value of **f** on two arbitrary vectors is f$(\vec{A},\vec{B}) =$f$(A^{\alpha}\vec{e_{\alpha}},B^{\beta}\vec{e_{\beta}})=A^{\alpha}B^{\beta}$ f$(\vec{e_{\alpha}},\vec{e_{\beta}})=A^{\alpha}B^{\beta}f_{\alpha \beta}$ (contraction, the value a tensor takes when supplied with vectors is always a contraction of their components, in whatever frame). Notice two different dummy indices are used to keep track of two different summations.
+- A basis for these tensors would have to be a(for each of the 16 components) 16 element set        {$\tilde{w}^{\alpha \beta}$} such that f$=f_{\alpha \beta}\tilde{\omega}^{\alpha \beta}$ (a geometrical invariant object).
 - Since we can write an equation for the components, in it we can express the LHS in terms of the basis one-forms and see if that leads anywhere: 
 	- $f_{\mu \nu}=$f$(\vec{e}_{\mu}\vec{e}_{\nu})=f_{\alpha \beta}\tilde{\omega}^{\alpha \beta}(\vec{e_{\mu}},\vec{e_{\nu}})$  $$\rightarrow \tilde{\omega}^{\alpha \beta}(\vec{e_{\mu}},\vec{e_{\nu}}) = \delta^{\alpha}_{\mu}\delta^{\beta}_{\nu}$$
 - Hence, $$\tilde{\omega}^{\alpha \beta}= \tilde{\omega}^{\alpha}\otimes \tilde{\omega}^{\beta}$$
 are the basis for all $\begin{pmatrix}0\\2 \end{pmatrix}$ tensors and so we write, for a general tensor: f$=f_{\alpha \beta}\tilde{\omega}^{\alpha}\otimes \tilde{\omega}^{\beta}$ 
 - This is a sum of simple outer product tensors (each value of $\alpha$ and $\beta$ corresponds to a term(which is an outer product one form) in the sum).
-- 
+- So, if you have got two general one-forms, you can make a general 2nd rank tensor by their linear sum.
+
+*Symmetries*
+- A $\begin{pmatrix}0\\2\end{pmatrix}$ tensor takes two arguments, and as we have seen, their order is important. The behavior of a tensor under an interchange of its arguments is an important property.
+- A tensor is symmetric if **f**$(\vec{A},\vec{B})=$ **f**$(\vec{B},\vec{A})$,  $\forall \vec{A},\vec{B}$. To see the behavior of it's components, set $\vec{A} = \vec{e}_{\alpha}$ $\rightarrow$ $f_{\alpha \beta} =$f$(\vec{e_{\alpha}},\vec{e}_{\beta})=(\vec{e_{\beta}},\vec{e}_{\alpha})=f_{\beta \alpha}$. This is the same condition for a symmetric matix: corresponding rows and columns are the same.
+- An arbitrary tensor **h** can define a new symmetric tensor: $h_{(s)}(\vec{A},\vec{B}) =\frac{1}{2}h(\vec{A},\vec{B})+ \frac{1}{2} h(\vec{B},\vec{A})$. Replacing the vectors with basis vectors, we find the corresponding relation for the components: $h_{(s) \alpha \beta}= \frac{1}{2} (h_{\alpha \beta} + h_{\beta \alpha })$. For this (the components of a symmetric tensor), a special notation is used: $h_{(\alpha \beta)}= \frac{1}{2} (h_{\alpha \beta} + h_{\beta \alpha })$. (Components of a symmetric tensor defined from the components of a general tensor).
+- Similarly, an antisymmetric tensor can be defined, with the symbol A used for it. For the components, square brackets are used: $h_{[\alpha \beta]}$.
+- $\rightarrow$  any tensor can be expressed as a sum of a symmetric and anti symmetric tensors defined from it. For the components (and similarly for the tensor): $h_{\alpha \beta}=h_{(\alpha \beta)} + h_{[\alpha \beta]}$. So any $\begin{pmatrix}0\\2\end{pmatrix}$ tensor can be split uniquely into its symmetric and antisymmetric parts.
+- The metric tensor **g** is symmetric.
+
+### 3.5 Metrics as a Mapping of vectors into One-forms
+

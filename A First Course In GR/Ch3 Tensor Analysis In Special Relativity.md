@@ -131,6 +131,19 @@ are the basis for all $\begin{pmatrix}0\\2 \end{pmatrix}$ tensors and so we writ
 - Vectors and One-forms act in complimentary ways, you can operate on one to produce the other. Such ideas lead to the saying that vectors and one-forms are dual to each other.
 - Such dual spaces are found elsewhere in physics too (the operation of finding the element of one space from an element of the other is called the adjoint and is 1-1 and invertible):
 	- Row vectors as one forms matrix multiplying with column vectors to produce a number(linearly).
-	- In Quantum Mechanics, the wavefunction is a complex scalar field $\psi(\vec{x})$, drawn from the *Hilbert space* of all such functions, which, since it satisfies the axioms for a vector space, is one. Since it is either the metric or a one-form that lets us evaluate the inner product between two vectors, the Quantum Mechanical inner product suggests that the complex conjugate of the elements of the Hilbert space make the space of one-forms, dual to the Hilbert space, with the value it returns when acted upon a vector is the integral with it (analogous to the sum). The operation of complex conjugation acts like our metric tensor, transforming a vector (of the hilbert space) to a one-form.
+	- In Quantum Mechanics, the wavefunction is a complex scalar field $\psi(\vec{x})$, drawn from the *Hilbert space* of all such functions, which, since it satisfies the axioms for a vector space, is one. Since it is either the metric or a one-form that lets us evaluate the inner product between two vectors, the Quantum Mechanical inner product suggests that the complex conjugate of the elements of the Hilbert space make the space of one-forms, dual to the Hilbert space, with the value it returns when acted upon a vector is the integral with it (analogous to the sum). The operation of complex conjugation acts like our metric tensor, transforming a vector (of the Hilbert space) to a one-form.
+	- The same idea is reflected in Dirac's bras and kets.
+- The concept of a dual vector space arises very frequently in advanced mathematical physics.
+
+*Magnitudes and scalar products of one-forms*
+- The metric tensor provides a (bijective) map from the space of all one-forms to the space of all vectors. Hence, with every one-form, we can associate a vector (the one obtained by contracting the one-form with one of the indices of the metric tensor).
+- Hence, the magnitude of a one-form is defined as the magnitude of the corresponding vector: $\tilde{p}^{2}=\vec{p}^{2}=\eta_{\alpha \beta}p^{\alpha}p^{\beta}$.
+- This would involve(to find the magnitude of the one-form) finding the set {$p^\alpha$} from {$p_{\beta}$}, but $\eta_{\alpha \beta}p^{\alpha}p^{\beta}=\eta_{\alpha \beta}(\eta^{\alpha \mu}p_{\mu})(\eta^{\beta \nu}p_{\nu})$.   notice the use of different indices for each independent summation.
+- Since $\eta_{\alpha \beta}\eta^{\beta \nu} =\delta^{\nu \alpha}$,(summation over beta) since the two are inverses of each other and the LHS is just a matrix product. Using this, the above equation reduces to: $\tilde{p}^{2}=\eta^{\alpha \beta}p_{\alpha}p_{\beta}$.
+- Using the components of the metric tensor in Euclidean space, in Cartesian coordinates, we find the magnitude for one-forms has the same form as that of the vector and thus that of a spacetime interval, and so is invariant. One-forms are timelike, spacelike, or lightlike as their associated vectors are.
+- From writing an expression for the magnitude of the sum of two one forms, we can define the scalar product for one-forms. It is the same as that for vectors.
+- ....
+
+
 
 

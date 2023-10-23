@@ -101,3 +101,28 @@ are the basis for all $\begin{pmatrix}0\\2 \end{pmatrix}$ tensors and so we writ
 
 ### 3.5 Metrics as a Mapping of vectors into One-forms
 
+- The fundamental role of a metric in differential geometry is to act as a mapping between one-forms ands vectors:
+	- Consider **g** and a single vector $\vec{V}$, the expression g$(\vec{V}, )$. Since this is a linear function of 1 vector input, it is a one-form: g$(\vec{V}, )\equiv \tilde{V}()$.
+	- $\tilde{V}$ is a one-form whose value on a vector is $\vec{V}\cdot \vec{A}$: $\tilde{V}(\vec{A}) \equiv g(\vec{V},\vec{A}) =\vec{V}\cdot \vec{A}$. Since **g** is symmetric g$(\ ,\vec{V})\equiv \tilde{V}()$.
+	- The components of $\tilde{V}$ are: $\tilde{V}(\vec{e}_{\alpha})=\vec{V}\cdot \vec{e}_{\alpha}=V^{\beta}\vec{e}_{\beta}\cdot \vec{e}_{\alpha}=V^{\beta}\eta_{\alpha \beta}=V_{\alpha}\rightarrow$ $$V_{\alpha}=\eta_{\alpha \beta}V^{\beta}$$ 
+	- The components of the above one-form are distinguished from the components of the vector only by the positioning of the index.
+	- These one-forms can be used to return a scalar product when contracted with a vector.
+	- Due to the metric tensor components $\eta_{\alpha \beta}$ , if the components of a $\vec{V}$ are {$V^{\alpha}$}=$(a,b,c,d)$, then the components of the one-form $\tilde{V}$ are {$V_{\alpha}$}=$(-a,b,c,d)$.
+	- In this case only the sign of the time component can be changed to change between the components of a vector and the corresponding one form obtained by inputting that vector into the metric tensor. However, since this result was obtained by using the components of the metric tensor, the result will be different in other frames where the components of the metric tensor are different.
+	- In the above discussion, the metric tensor took in a vector and returned a one-form. 
+	- Hence, the metric tensor **g**,and in some frame, its components $\eta_{\alpha \beta}$ provides a mapping that takes a vector and returns a one-form
+
+	*The inverse*
+	- The equation $V_{\alpha}=V^{\beta}\eta_{\alpha \beta}$  suggests that a way of going from one-form components to the related vector components if an inverse of the metric tensor exists, which it does.
+	- Hence, given {$A_{\beta}$}, we can find{$A^{\alpha}$}: $$A^{\beta}=\eta^{\alpha \beta} A_\beta$$where $\eta^{\alpha \beta}$ are the components of the inverse of the metric tensor.
+	- Hence, the inverse metric tensor, and in some frame, its components $\eta^{\alpha \beta}$ provide a mapping that takes in a one-form and returns a vector.
+
+- Similarly, we can associate a vector $\vec{d}\phi$ with the gradient one-form $\tilde{d}\phi$:
+	- Since the gradient vector points in the direction of the greatest increase of function, in a direction where the function does not increase at all (be constant), it must have no component. For example, take your function to be height, and imagine yourself on a mountain. Here the gradient points in the z direction. If you travel on a vector that points (lays) in the x-y plane, the gradient vector is orthogonal to it and its dot product with it zero.
+	- One can see that the vector $\vec{d}\phi$ is orthogonal to surfaces of constant $\phi$ as follows:
+		- By this mapping (feed in a vector to the metric tensor and get a one form, feed the one-form a vector and it returns the scalar value of this vector with the first one) Its inner product with any vector is the same as the contraction of the gradient one-form with that vector.
+		- For a vector on a surface of constant $\phi$, the value $\tilde{d}\phi(\vec{V})=0$, since, from earlier discussions, the gradient one-form's components are the rate of change of the function $\phi$, which in the direction of a vector which is in the direction of zero(constant) change of the function are equal to zero.
+- $\eta^{\alpha \beta}$ is identical to $\eta_{\alpha \beta}$, hence, in going from one-form to vector also just change the sign of the time component.
+
+
+

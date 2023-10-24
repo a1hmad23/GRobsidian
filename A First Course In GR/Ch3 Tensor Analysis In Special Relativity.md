@@ -172,4 +172,15 @@ are the basis for all $\begin{pmatrix}0\\2 \end{pmatrix}$ tensors and so we writ
 
 *Mixed Components of Metric*
 - Suppose we raise an index of the metric tensor components using the components of the inverse metric tensor: $\eta^{\alpha}_{\beta} \equiv \eta^{\alpha \mu}\eta_{\mu \beta}$. Since the RHS is the matrix product of two inverses, we must have $\eta^{\alpha}_{\beta}\equiv \delta^{\alpha}_{\beta}$.
-- Raising the other index: $\eta^{\alpha \beta}\equiv$
+- Raising the other index: $\eta^{\alpha \beta}\equiv \eta^{\beta \gamma}\delta^{\alpha}_\gamma$ is an identity.
+- So the matrix inverse of the covariant metric tensor is the same as the contravariant metric tensor.
+
+*Metric and Non-Metric vector Algebras*
+- Why does the metric and not some other $\begin{pmatrix}0\\2\end{pmatrix}$ tensor generate the correspondence between one-forms and vectors?
+- First, the correspondence is needed since it gives us the inner product and we want the inner product since in physics, they are useful. In QM and classical mechanics, a metric for the vector space is not required.
+- It is the metric that generates the mapping, so if it was some other tensor that did that, then that would have been the metric. The metric is an added bit of structure in the vector space. Different spaces in mathematics can have different metric structures. we are dealing pseudo-Riemannian, where the magnitude given to vectors by the metric could both be positive and negative.
+
+### 3.8 Differentiation of Tensors
+
+- A function $f$ is a tensor of $\begin{pmatrix}0\\0\end{pmatrix}$ rank, while its gradient $\tilde{d}f$ is function of $\begin{pmatrix}0\\1\end{pmatrix}$ rank. Differentiation of a function produces a tensor of one higher (covariant) rank. This applies to differentiation of tensor of any rank.
+- 

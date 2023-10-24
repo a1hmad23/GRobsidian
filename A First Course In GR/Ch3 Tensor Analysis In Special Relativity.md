@@ -144,6 +144,9 @@ are the basis for all $\begin{pmatrix}0\\2 \end{pmatrix}$ tensors and so we writ
 - From writing an expression for the magnitude of the sum of two one forms, we can define the scalar product for one-forms. It is the same as that for vectors.
 - ....
 
+### 3.6 Finally: $\begin{pmatrix}M\\N\end{pmatrix}$ Tensors
 
+ *Vector as a function of One-Forms* 
+ -  
 
 

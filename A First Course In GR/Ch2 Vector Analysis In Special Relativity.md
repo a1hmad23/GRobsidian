@@ -16,7 +16,7 @@
 - In different frames, although the basis vectors and components of a vector are different, their contractions denote the same geometrical invariant vector objects (the components are just different representations of the same vector), Hence, we can write $$A^{\alpha}e_{\alpha}= A^{\alpha'}e_{\alpha'}$$
 - Since we know how the components transform (like the coordinates, which transform by the Lorentz transformations), we can deduce the transformation rule for basis vectors by the idea that vectors (in different representations) are invariant:
 $$A^{\alpha}e_{\alpha} = \Lambda^{\alpha'}_{\beta}A^{\beta}e_{\alpha'}$$
-- On the left there's a double sum. Since $\Lambda^{\alpha'}_{\beta}$and $A^{\beta}$ are just numbers (under the summation), their order can be interchanged $A^{\beta}\Lambda^{\alpha'}_{\beta}e_{\alpha'} = A^{\alpha}e_{\alpha}$ , and renaming the dummy indices: $A^{\alpha}e_{\alpha} = A^{\alpha}\Lambda^{\beta'}_{\alpha}e_{\beta'}\rightarrow$   
+- On the right there's a double sum. Since $\Lambda^{\alpha'}_{\beta}$and $A^{\beta}$ are just numbers (under the summation), their order can be interchanged $A^{\beta}\Lambda^{\alpha'}_{\beta}e_{\alpha'} = A^{\alpha}e_{\alpha}$ , and renaming the dummy indices: $A^{\alpha}e_{\alpha} = A^{\alpha}\Lambda^{\beta'}_{\alpha}e_{\beta'}\rightarrow$   
 - $$
 e_{\alpha} = \Lambda^{\beta'}_{\alpha}e_{\beta'}$$
 - This gives each element of one set of basis vectors as a linear combination of another set of basis vectors.
@@ -28,7 +28,7 @@ e_{\alpha} = \Lambda^{\beta'}_{\alpha}e_{\beta'}$$
 
 ### 2.3 The Four Velocity
 
-- Defined as a tangent to a particles world line, of length such that it stretches one  unit of time in the particles rest frame. Since in the particles own frame, its movement through spacetime is only through its proper time, its velocity is only in the time direction, the unit basis vector $e_0$ in the time direction.
+- Defined as a tangent to a particles world line, of length such that it stretches one unit of time in the particles rest frame. Since in the particles own frame, its movement through spacetime is only through its proper time, its velocity is only in the time direction, the unit basis vector $e_0$ in the time direction.
 - Although an accelerating particle has no inertial frame in which it is always at rest, its 4- velocity can be defined in a 'momentarily comoving reference frame' MCRF
 
 ### 2.4 The Four Momentum
@@ -66,18 +66,18 @@ Since we know that in any different frame $O'$, the LHS and the first two terms 
 
 **Four-velocity and acceleration as derivatives**
 - Suppose a particle makes an infinitesimal displacement $dx$ in spacetime, (independent of any coordinate system), whose coordinates in a frame $O$ are: $dx \rightarrow_{O}(dt,dx,dy,dz)$ and whose magnitude in frame $O$ and thus in all frames (of the displacement (vector)) is $-dt^{2}+dx^{2}+dy^{2}+dz^{2}$, which is just the spacetime interval $ds^{2}= dx\cdot dx$ (of the starting and ending events of the displacement).
-- Since the worldline is timelike, this is negative, and hence $d \tau ^{2}=-dx\cdot dx=-ds^{2}$.
+- Since worldlines are timelike, this is negative. Considering the particles own rest frame: $d \tau ^{2}=-dx\cdot dx=-ds^{2}$.
 - Now, the vector $\frac{dx}{d\tau}$ is just a scalar multiple of $dx$ (the scalar being $\frac{1}{d \tau}$), it is tangent to $dx$, and hence the particle's worldline. It's magnitude is $\frac{dx}{ d \tau}\cdot \frac{dx}{ d \tau} = \frac{dx\cdot dx}{d \tau^{2}} = -1$
 - Hence, it is a timelike vector of unit magnitude ($-1$), and so if we transform to the particles rest frame(MCRF), it is a vector whose magnitude is $-1$, which makes it the time basis vector of a MCRF. In an MCRF, $dx \rightarrow_{MCRF}(dt,0,0,0)$, and so $$\frac{dx}{d \tau} \rightarrow_{MCRF}(1,0,0,0)$$
 Or, $\frac{dx}{ d \tau} = (e_{0})_{MCRF}$  . These are just the definition for four-velocity, and so we have $$U=\frac{dx}{d \tau}$$
 - To examine four-acceleration $\frac{dU}{d ta} = \frac{d^{2}x}{d \tau}$, we could take the derivative of $U\cdot U$: $\frac{d}{d \tau} (U\cdot U) = 2U \cdot (\frac{dU}{d \tau})$ . But since $U\cdot U = -1$, a constant, its derivative is $0$, and so $$U \cdot \left(\frac{dU}{d \tau}\right)= 0$$
-- In an MCRF, $U$ has only a time component, so this implies that in an MCRF, $\frac{dU}{d \tau} \rightarrow_{MCRF}(0,a^{1},a^{2},a^{3})$
+- In an MCRF, $U$ has only a time component, so this implies that $\frac{dU}{d \tau} \rightarrow_{MCRF}(0,a^{1},a^{2},a^{3})$
 This defines the acceleration.
 
 **Energy and Momentum**
 - Consider a particle whose momentum is $P$. Then, $P\cdot P = m^{2}U\cdot U = -m^{2}$. But $P\cdot P = -E^{2}+ (p^1)^{2}+(p^{2})^{2}+(p^{3})^{2}$
-Hence, $$E^{2}= m^{2}+ P^2,$$
-is an expression for the total energy of the particle, where $P^{2}= \Sigma_{i=1}^{3}p_{i}$ is the magnitude of the spatial momentum of the particle.
+Hence, $$E^{2}= m^{2}+ p^2,$$
+is an expression for the total energy of the particle, where $p^{2}= \Sigma_{i=1}^{3}p_{i}$ is the magnitude of the spatial momentum of the particle.
 
 - In the frame $O$, let a particle move with momentum $p$ and let another observer move with four-velocity $O'$. Then, $p\cdot U_{obs} = p\cdot e_{0'}$ , where $e_{0'}$ is the observers four-velocity in its own frame. In the observers $O'$ frame, the four-momentum of the particle has components $p\rightarrow_{O'}(E,P^{1},p^{2},p^{3})$. Choosing to find (evaluate) the invariant scalar product in the observers frame (the result will hold for all frames), we find: $$-p\cdot U_{obs} = E$$
 - This gives the energy of a particle relative to some specific observer. Hence, the energy of a particle relative to some observer can be calculated by anyone by taking the scalar product of the momentum of the particle that they measure with the 4-velocity of the observer that they measure. It is a frame invariant expression for a particle's energy relative to some observer.

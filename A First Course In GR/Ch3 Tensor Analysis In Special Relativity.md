@@ -64,7 +64,7 @@ are the gradient One-Form's components in some frame $O$.
 -  $\frac{\partial{\phi}}{ \partial{x^\alpha}} \equiv \phi_{,\alpha}$ 
 - To be consistent with the transformation properties, the superscript in the denominator is a subscript.
 - $x^{\alpha}_{,\beta} = \delta^{\alpha}_{\beta}$ 
-- Since the components of a vector are just scalars, the set of all $\alpha th$ components of a vector field is a scalar field. Hence, their gradient can be taken, which would be a one-form as we showed for a general scalar field: $\frac{\partial{x^{\alpha}}}{ \partial{x^{\beta}}} \equiv \tilde{d}x^{\alpha} \equiv x^{\alpha}_{,\beta} = \delta^{\alpha}_{\beta} \rightarrow$ $\tilde{d}x^{\alpha} \equiv \delta^{\alpha}_{\beta} \rightarrow$
+- Since the components of a vector are just scalars, and a vector is defined at every point in spacetime in a vector field, the set of all $\alpha th$ components of a vector field is a scalar field. Hence, their gradient can be taken, which would be a one-form as we showed for a general scalar field: $\frac{\partial{x^{\alpha}}}{ \partial{x^{\beta}}} \equiv \tilde{d}x^{\alpha} \equiv x^{\alpha}_{,\beta} = \delta^{\alpha}_{\beta} \rightarrow$ $\tilde{d}x^{\alpha} \equiv \delta^{\alpha}_{\beta} \rightarrow$
 $$\tilde{d}x^{\alpha} \equiv \tilde{\omega}^{\alpha}$$
 - This result shows that the basis one-form is just $\tilde{d}x^{\alpha}$ ,the gradient of the coordinates.
 - For any function $f$, we know the components of the gradient One-Form are $\frac{\partial{f}}{ \partial{x^{\alpha}}}$. If we couple this with a one-form basis, we will get the complete One-Form. We found that the basis One-Forms are equivalent to the gradient One-Form of the coordinates, hence: $$\tilde{d}f = \frac{\partial{f}}{ \partial{x}} \tilde{d}x^{\alpha}$$

@@ -27,9 +27,11 @@ $$n\equiv number\ density\ in\ the\ MCRF\ of\ the\ element$$
 - The flux of particles across a surface is the number crossing a unit area of that surface in a unit time.
 - Since area and time are frame dependent concepts, the flux clearly depends on the inertial reference frame used. It also depends on the orientation of the surface, since a surface parallel to the velocity of the particles will have no particles crossing it.
 - In the rest frame of the dust, the flux is 0.
-- in $O'$, suppose all particles move with the velocity $v$ in the $x$ direction. Consider a surface $\mathcal{L}$ that is oriented perpendicular to $x'$ which has are $A=\Delta y \Delta z$. All the particles within a distance $v \Delta t$ will cross the surface in time $\Delta t'$. Since the particles are moving in the $x$-direction, the rectangular volume $\Delta y \Delta z v \Delta t'$ contains all and only those particles that will generate the flux. Hence, the total number of particles that will cross the surface is $\frac{n}{\sqrt{1-v^{2}}}\Delta y \Delta z v \Delta t'$.
+- in $O'$, suppose all particles move with the velocity $v$ in the $x$ direction. Consider a surface $\mathcal{L}$ that is oriented perpendicular to $x'$ which has are $A=\Delta y \Delta z$. All the particles within a distance $x=v \Delta t'$ will cross the surface in time $\Delta t'$. Since the particles are moving in the $x$-direction, the rectangular volume $\Delta y \Delta z v \Delta t'$ contains all and only those particles that will generate the flux. Hence, the total number of particles that will cross the surface is $\frac{n}{\sqrt{1-v^{2}}}\Delta y \Delta z v \Delta t'$.
 - The flux (number crossing per unit volume per unit time) is then  $$(flux)^{x'}=\frac{nv}{\sqrt{1-v^{2}}}$$
 - Suppose the particles also had a velocity in the y-direction. Then, in 2-D, the particles will hit the surface $\mathcal{L}$ diagonally, and the volume enclosing the particles that will hit the surface forms a triangle. In 3-D, this will be a parallelepiped (extending to outside the screen).
 - ......
 - $$(flux)^{x'}=\frac{nv^{x'}}{\sqrt{1-v^{2}}}$$
+*The Number Flux Four Vector*
+
 

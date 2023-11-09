@@ -33,5 +33,20 @@ $$n\equiv number\ density\ in\ the\ MCRF\ of\ the\ element$$
 - ......
 - $$(flux)^{x'}=\frac{nv^{x'}}{\sqrt{1-v^{2}}}$$
 *The Number Flux Four Vector*
+- Suppose in a frame $O$ there is a particle moving with velocity $v$ in the $x$ direction. The particle defines an inertial frame $O'$, which is its rest frame where the velocity vector is just the time basis vector $\vec{e_{0'}}$. Now that we know a vectors representation in one inertial frame, we can apply the Lorentz transformations to it to find its representation in any other frame we know the relative velocity with the rest frame of. Hence, in the frame $O'$, $\vec{U}\rightarrow_{O'} e_{0'}$, so $U^{\alpha'}=(1,0,0,0)$Then, in the frame $O$, $U^{\beta}= \Lambda^{\beta}_{\alpha'}U^{\alpha'}=\Lambda^{\beta}_{0'}$ 
+  Hence, $\vec{U}\rightarrow_{O}(\Lambda^{0}_{0},\Lambda^{1}_{0},\Lambda^{2}_{0},\Lambda^{3}_{0})$
+  The $v$ in the Lorentz transformations will be the same as the particles velocity.
+- Let the particle have velocity ($v^{x},v^{y},v^{z}$) in the frame $O'$. Then, the 4-velocity $\vec{U}$ in the frame $O'$ has components: $\vec{U}\rightarrow_{O'}(\frac{1}{\sqrt{1-v^{2}}}, \frac{v^{x}}{\sqrt{1-v^{2}}}, \frac{v^{y}}{\sqrt{i-v^{2}}}, \frac{v^{z}}{\sqrt{1-v^{2}}})$ 
 
+- The vector $\vec{N}$ defined by $\vec{N}=n \vec{U}$ then, in the frame $O'$ has components: $$\vec{N}\rightarrow_{O'}(\frac{n}{\sqrt{1-v^{2}}}, \frac{nv^{x}}{\sqrt{1-v^{2}}}, \frac{nv^{y}}{\sqrt{1-v^{2}}}, \frac{nv^{z}}{\sqrt{1-v^{2}}})$$
+- Note that $n$ here denotes specifically the number density in the MCRF frame. Hence, the time component of the number flux vector $\vec{N}$ in any frame denotes the number density in that frame, while the spatial components thus become the flux in that frame. Since this is a tensor, it is a frame independent geometrical object.
+- $\vec{N}\cdot \vec{N}=-n^{2}\rightarrow n=-\sqrt{\vec{N}\cdot \vec{N}}$ 
+- Thus, $n$ is a scalar. Like rest mass, it is the scalar value of the number density in the MCRF.
 
+#### 4.3 One-Forms And Surfaces
+
+*Number Density as a Timelike flux*
+- A timelike flux is the number density.
+- ....
+
+*A One-Form defines a surface*

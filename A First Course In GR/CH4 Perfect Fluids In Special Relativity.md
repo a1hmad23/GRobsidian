@@ -50,7 +50,8 @@ $$n\equiv number\ density\ in\ the\ MCRF\ of\ the\ element$$
 - ![[Pasted image 20231116193322.png]]
 - The flux is the number of worldlines crossing the x-surface per unit time ($\Delta t=1)$. Taking into account the y and z directions of the x-surface, the flux can be regarded as the number of worldlines present in the unit cube $\Delta t=1, \Delta z=1, \Delta y=1$.
 - Since time too is a coordinate no different than the spatial coordinates in these matters, we can think of a flux through time: imagine an ordinary cube with sides $\Delta x=\Delta y= \Delta z=1$ and regard the surface $L$ as constant in $t$. ![[Pasted image 20231116194048.png]]
-- Then, the timelike flux is the number crossing the interval $\Delta x=1$ (since y and z are suppressed)
+- Then, the timelike flux is the number crossing the interval $\Delta x=1$ (since y and z are suppressed), But this is just the number contained in the unit volume at the given time: the number density. So, timelike flux is the number density.
+
  *A One-Form defines a surface*
 
 

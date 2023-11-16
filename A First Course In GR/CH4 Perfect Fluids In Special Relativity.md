@@ -53,5 +53,22 @@ $$n\equiv number\ density\ in\ the\ MCRF\ of\ the\ element$$
 - Then, the timelike flux is the number crossing the interval $\Delta x=1$ (since y and z are suppressed), But this is just the number contained in the unit volume at the given time: the number density. So, timelike flux is the number density.
 
  *A One-Form defines a surface*
+ - To push our invariant picture further, we use one-forms to define the above surfaces.
+ - In general, a surface is defined by $\phi(t,x,y,z)=C$. The gradient of the function $\phi$ is a normal one-form, which in a sense defines the surface as it uniquely determines the direction of its normal. However, any multiple would do so too, so it is customary to choose the unit normal one-form for surfaces that are not null: $\tilde{n}=\frac{\tilde{d}\phi}{|\tilde{d \phi}|}$, where |$\tilde{d \phi}$| is the magnitude of the normal one-form |$\tilde{d \phi}$| =$|\eta^{\alpha \beta} \phi_{,\alpha} \phi_{,\beta}|^{\frac{1}{2}}$ 
+ - The surface element is defines as the unit normal times an area element. In this case, it is a volume element in three space in a three space whose coordinates are $x^{\alpha},x^{\beta}, x^{\gamma}$ can be represented by: $\tilde{n}dx^{\alpha}dx^{\beta}dx^{\gamma}$. A unit volume is $\tilde{n}$.
+
+*The Flux Across The Surface*
+- In 3D, the flux across the electric field is just $\vec{E}\cdot \vec{n}$. Here, it will be $\langle \tilde{n},\vec{N} \rangle$:
+	- Let $\phi$ be a coordinate $x'$. Then, a surface of constant $x'$  (and $\phi$) has normal $\tilde{d}x'$, which is a unit normal since $\tilde{d}x' \rightarrow_{O'}(0,1,0,0)$ and magnitude is invariant. 
+	- Then, $\langle \tilde{n},\vec{N} \rangle =N^{\alpha}(\tilde{d}x')_{\alpha} =N^{x'}$, which as we have seen is the flux across x-surfaces. Clearly, if we had chosen a surface of another constant coordinate, lets say $t'$, then we would have wound up with the flux across that surface, the timelike flux, number density in that frame $N^{0'}$.
+	- Hence, given the vector $\vec{N}$, we can find its flux across a surface by contracting it with it unit normal one form $\tilde{n}$. Moreover, we have expressed everything frame invariantly and in a manner that separates the property of the system: $\vec{N}$ from that of the surface $\tilde{n}$.
+
+*Representation Of A Frame By A One-Form*
+- An inertial frame is defines by its four-velocity, the spatial components giving the velocity by which its spatial axes are moving and temporal component giving the rate at which its clocks are running (time dilation).
+- But it can also be defined by the corresponding one-form, the one associated with the four velocity **g**$(\vec{U},)$. This has components $U_{\alpha}=n_{\alpha \beta}U^{\beta}$. In this frame then, $U_{0}=-1$ and $U_{i}=0$.
+- Since the components of $\vec{U}$ equal the components $\vec{d}t$, and they are both vectors so transform in the same manner, the two are equal so a frame can also be defines by giving the vector $\vec{d}t$ in its own rest frame.
+- Likewise, the above components of the one-form matches $-\tilde{d}t$ (derivative of t with respect to t) and so we could define a frame by giving $\tilde{d}t$. This is just the normal to the surface of constant t, and so can be pictured as surfaces of constant t, the surfaces of simultaneity. These clearly do defines a frame (a rigid one). Then, we have $E= \langle \tilde{d}t,\vec{p} \rangle$.
+
+
 
 

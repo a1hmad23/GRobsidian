@@ -70,5 +70,36 @@ $$n\equiv number\ density\ in\ the\ MCRF\ of\ the\ element$$
 - Likewise, the above components of the one-form matches $-\tilde{d}t$ (derivative of t with respect to t) and so we could define a frame by giving $\tilde{d}t$. This is just the normal to the surface of constant t, and so can be pictured as surfaces of constant t, the surfaces of simultaneity. These clearly do defines a frame (a rigid one). Then, we have $E= \langle \tilde{d}t,\vec{p} \rangle$.
 
 
+### 4.4 Dust Again: The Stress-Energy Tensor
+
+- Dust particles also have energy and momentum, which are the source of the gravitational field in GR. So we must ask how to represent them in a frame invariant manner. Assume that all particles have the same rest mass m.
+
+*Energy Density*
+- In the MCRF of dust, each particle has energy $m$ and there are $n$ particles per unit volume. Thus, the energy density is $\rho = energy\ density\ in\ the\ MCRF = mn$, a scalar.
+- In a frame $O'$ the number density is again Lorentz transformed since volume is, but since energy is just a component of four momentum, it too is transformed. So we have: 
+		Energy density in a frame in which particles have velocity $v$: $\frac{\rho}{(1-v^{2)}}$ 
+- Since this transformation involves two factors of $(1-v^{2})^{\frac{1}{2}}= \Lambda^{0'}_{0}$ , it cant be a component of a four-vector but rather of a $\begin{pmatrix}0\\ 2\end{pmatrix}$ tensor (one Lorentz factor for each index). To define energy requires a one-form: in order to select the 0th component of the four-vector of energy and momentum; to define a density also requires a one-form, since density is a flux across a constant time surface. Similarly, an energy flux (density) requires two one-forms, one to define energy and the other to define the surface.
+- One can also speak of momentum density: again a one-form defines which component of momentum and another one-form defines density.
+- By analogy, there is also a momentum flux: the rate at which momentum crosses some surface.
+- So there is a tensor **T**, called the stress-energy tensor which has all these numbers as values when supplied with the appropriate one-forms as arguments.
+
+*The Stress-Energy Tensor*
+- The stress-energy tensor is defined by its components: $$T(\tilde{d}x^{\alpha}, \tilde{d}x^{\beta})=T^{\alpha \beta}= Flux\ of\ \alpha\ momentum\ across\ a\ surface\ of\ constant\ x^\beta$$
+	- $\alpha\ momentum$ is just the $\alpha$ component of four-momentum: $\langle \tilde{d}x^{\alpha}, \vec{p} \rangle$ 
+	- $T^{00}$=energy density (flux of 0 momentum across a surface of constant t)
+	- $T^{0i}$= flux of energy across $x^{i}$ (=constant) surface
+	- $T^{i0}$=momentum density
+	- $T^{ij}$ flux of i momentum across j surface
+
+- For any system, giving the components of **T** in some frame defines it completely. For dust in the MCRF: 
+	- $(T^{00})_{MCRF}=\rho=mn$ 
+	- All the other components are zero since there is neither any spatial flux nor any i momenta.
+- The Tensor $\vec{p} \otimes \vec{N}$ has exactly these components in the MCRF too. Hence, dust: $$T=\vec{p} \otimes \vec{N}=mn\ \vec{U} \otimes \vec{U}= \rho \ \vec{U} \otimes \vec{U}$$
+- Hence, $T^{\alpha \beta}=T(\tilde{w}^{\alpha},\tilde{w}^{\beta})=\rho \vec{U}(\tilde{w}^{\alpha})\vec{U}(\tilde{w}^{\beta})=\rho U^{\alpha}U^{\beta}$ 
+	![[Pasted image 20231117222904.png]]
+ These are what one would calculate for energy density, energy flux, momentum density, momentum flux from first principles
+ - Notice that **T** is symmetric. This is true in general, not just for dust.
+
+
 
 

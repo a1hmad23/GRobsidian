@@ -4,7 +4,7 @@
 - The source of the gravitational field can be taken as a perfect fluid as a first approximation.
 - A fluid is a special kind of continuum- a collection of particles so numerous that the dynamics of individual particles cannot be followed, leaving only a description in terms of average quantities-number of particles per unit volume, energy density, density of momentum, temperature etc.
 - The collection of particles must be large enough so that individual particles don't matter, but small enough so that it is relatively homogenous- average velocity, kinetic energy, interparticle spacing must be the same everywhere in the collection. Such a collection is called an element.
-- The continuum approximations assigns to each element a value of density, temperature, etc. If such a collection does not exist, then the continuum approximation breaks down. Since the elements are regarded as small, this approximation is mathematically expressed by assigning to each point a value of density, temperature, etc. So a continuum is defined by various fields, having values at each point and each time.
+- The continuum approximations assigns to each element a value of density, temperature, etc. If such a collection does not exist, then the continuum approximation breaks down. Since the elements are regarded as small, this approximation is mathematically expressed by assigning to each point a value of density, temperature, etc. So a continuum is defined by various fields- having values at each point and each time.
 - A fluid is a continuum that flows. Rigidity comes from forces parallel to the interface between two elements. Two adjacent elements can push and pull on each other, but the continuum wont be rigid unless they prevent each other from sliding along their common boundary. A fluid is characterized by the weakness of such forces compared to the push and pull forces which are called pressure. A perfect fluid has all anti slipping forces equal to 0, the only force between neighboring elements being pressure.
 
 ### 4.2 Dust: The Number-flux vector $\vec{N}$ 
@@ -99,6 +99,27 @@ $$n\equiv number\ density\ in\ the\ MCRF\ of\ the\ element$$
 	![[Pasted image 20231117222904.png]]
  These are what one would calculate for energy density, energy flux, momentum density, momentum flux from first principles
  - Notice that **T** is symmetric. This is true in general, not just for dust.
+
+
+### 4.5 General Fluids
+
+- Until now we have dealt with the simplest possible collection of particles: not interacting and all at the same constant velocity. To generalize this to real fluids, we have to take into account that besides the bulk motion of a fluid, each particle can have some random motion and various forces between the particles can contribute potential energies to the total.
+
+*Definition Of Macroscopic Quantities*
+- For each fluid element, we go to the frame where it is at rest- its total spatial momentum is zero. This is its MCRF. However, a fluid moment can accelerate, so a moment later a different frame will be its MCRF. Different fluid elements can be moving at different velocities, so an MCRF is not shared. Thus, the MCRF is specific to a single fluid element, and which frame is the MCRF is a function of position and time. All scalar quantities associated with a fluid element in relativity are defined to be their values in its MCRF.
+- ![[Pasted image 20231118133103.png]]
+
+*First Law Of Thermodynamics*
+- Conservation of Energy.
+- In an MCRF, a fluid element can exchange energy by either heat or work: $\Delta E=\Delta Q -p \Delta V$ 
+- If an element contains $N$ particles, and $n$ is the number density, then $V=\frac{N}{n}$ or $\Delta V=\frac{-N}{n^{2}}\Delta n$.
+- From the definition of $\rho$ : $E=\rho V =\rho \frac{N}{n}$ or $\Delta E=\rho \Delta V +\Delta \rho V$.
+- $\rightarrow \Delta Q=\frac{N}{n} \Delta \rho -N(\rho +p) \frac{\Delta n }{n^{2}}$ 
+- Heat absorbed by particle $q=\frac{Q}{n}$ is then: $nq=\Delta \rho - \frac{\rho + p}{n} \Delta n$ 
+- Suppose the changes are infinitesimal. It can be shown in general that a fluid's state can be described by two parameters, say $\rho$ and $n$. Everything else is then a function of these, such as the RHS of the above equation. The general theory of first order differential equation then says that for such an equation there are always present two functions of the two parameters such that:
+	$d \rho -(\rho + p) \frac{dn}{n}= A dB$     is an identity for all $rho$ and $n$.
+- It is customary in Thermodynamics to define temperature T as $A/n$ and entropy S as B: $d \rho -(\rho + p) \frac{dn}{n}=nTdS \rightarrow \Delta q=T \Delta S$         
+- The heat absorbed by a fluid element is proportional to its increase in entropy.
 
 
 

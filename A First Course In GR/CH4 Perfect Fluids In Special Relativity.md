@@ -121,6 +121,19 @@ $$n\equiv number\ density\ in\ the\ MCRF\ of\ the\ element$$
 - It is customary in Thermodynamics to define temperature T as $A/n$ and entropy S as B: $d \rho -(\rho + p) \frac{dn}{n}=nTdS \rightarrow \Delta q=T \Delta S$         
 - The heat absorbed by a fluid element is proportional to its increase in entropy.
 
+*The General Stress-Energy Tensor*
+- The earlier definition of the **T** was perfectly general. Then, in the MCRF of general fluid element, we have:
+	- $T^{00}=\rho= energy\ density$
+	- $T^{0i}=energy\ flux$. There is no motion but energy may be transmitted by heat conduction, so this is a heat conduction term in the MCRF. 
+	- $T^{i0}=momentum\ density$. Particles have no momentum, but if heat is being conducted, then the energy will carry momentum. (argument below for $T^{0i}=T^{i0}$)
+	- $T^{ij}=stress$.
 
+*The Spatial components of T, $T^{ij}$
+- Flux of i momentum across j surface.
+![[Pasted image 20231118164124.png]]
+	Consider two fluid elements A and B. In general they exert forces on each other. Let the force exerted by A on B be F. Let the common interface shared by them be L. B of course exerts an equal and opposite force on A. Since this is the MCRF where velocities are 0, newtons second law is perfectly valid here which say that force equals the rate of change of momentum. Hence, if A is exerting a force on B, A is pouring momentum onto B. Of course, other fluid elements might be doing the same to B, and the total momentum poured into B might be 0 so it wont move. There is therefore a flow of momentum from A to B across L, at the rate F. If L has area A, then the flux of momentum is F/A. If L is a surface of constant $x^j$, then $T^{ij}$ for the fluid element A is $\frac{F^{i}}{A}$.
+	 
+- So $T^{ij}$ represents forces between adjacent fluid elements. These forces need not be perpendicular to the interface (such as rigidity because of parallel forces), but if they are, then clearly $T^{ij}=0$ unless $i=j$.
 
-
+*Symmetry Of $T^{\alpha \beta}$
+- If a tensor is symmetric in one frame, that means in that frame for any $\tilde{r},\tilde{q},T(\tilde{r},\tilde{q})=T(\tilde{q},\tilde{r})$. But that is a tensor equation, with no reference to a specific frame, involving only geometric quantities. Hence, it implies symmetry in all frames.

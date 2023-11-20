@@ -137,3 +137,12 @@ $$n\equiv number\ density\ in\ the\ MCRF\ of\ the\ element$$
 
 *Symmetry Of $T^{\alpha \beta}$
 - If a tensor is symmetric in one frame, that means in that frame for any $\tilde{r},\tilde{q},T(\tilde{r},\tilde{q})=T(\tilde{q},\tilde{r})$. But that is a tensor equation, with no reference to a specific frame, involving only geometric quantities. Hence, it implies symmetry in all frames.
+
+![[Pasted image 20231120222434.png]]
+- The cube of side $l$ is a fluid element. Since $T^{ij}$ is the flux of momentum across j surface, and flux of momentum is momentum per unit time per unit area, while force is momentum per unit time so momentum flux is just force per unit area and $T^{ij}$ is momentum flux so $T^{ij}$ is force per unit area. Therefore, force across surface 1 is: $F^{i}_{1}=T^{ix}l^{2}$. Since F is not necessarily perpendicular to the surface, i runs from 1 to 3.
+- Similarly, force emanating from 2 to some neighbor is $F^{i}_{2}=T^{iy}l^{2}$ and theres $F^{i}_{3}$ and $F^{i}_{4}$.
+- We are considering small fluid elements where $l \rightarrow 0$. Then, in order for infinitesimal mass to not have infinite acceleration which any finite force would produce, the total force on the fluid element must vanish.
+- From Newtons 3rd law, the force on the fluid in the x direction is: $-F^{i}_{1} - F^{i}_{3}$. Hence, we must have $F^{i}_{3}=-F^{i}_{1}$. With this knowledge, we compute torques about the z-axis through the center of the fluid element (which is why we ignored the top and bottom forces as they dont contribute to this torque).
+- find total torque, find an equation for angular acceleration which would depend inversely on the size of the fluid element which must be 0 which would give the symmetry of **T** (partially, repeat argument, as it was arbitrary, for other axes for full symmetry).
+- Since energy flux is the speed at which energy density is flowing, and since energy and mass are the same thing, energy flux is the speed at which mass density is flowing which is just momentum density. Therefore, $T^{0i}=T^{i0}$ 
+- 

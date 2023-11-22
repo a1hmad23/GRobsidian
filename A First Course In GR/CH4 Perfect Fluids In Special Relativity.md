@@ -182,5 +182,11 @@ $$n\equiv number\ density\ in\ the\ MCRF\ of\ the\ element$$
 - $T^{\alpha \beta}_{,\beta}=[(\rho +p)U^{\alpha}U^{\beta}+p\eta^{\alpha \beta}]_{,\beta}$ 
 - Assuming conservation of particles $N^{\beta}_{,\beta}=nU^{\beta}_{,\beta}=0$, we write the first term as $[\frac{\rho +p}{n}  U^{\alpha}nU^{\beta}]_{\beta}$. By the produce rule of derivatives, we have $\frac{\rho +p}{n}  U^{\alpha}_{,\beta}nU^{\beta} + \frac{\rho +p}{n}  U^{\alpha}nU^{\beta}_{,\beta}=\frac{\rho +p}{n}  U^{\alpha}_{,\beta}nU^{\beta}=nU^{\beta}( \frac{\rho +p}{n} U^{\alpha})_{, \beta}$.
 - As for the second term, $\eta^{\alpha \beta}$ is a constant matrix so $\eta^{\alpha \beta}_{,\gamma}=0$ 
-- Moreover, we have $U^{\alpha}U_{\alpha}=-1 \rightarrow (U^{\alpha}U_{\alpha})_{,\beta}=0=(U^{\alpha}U^{\gamma}\eta_{\alpha \gamma})_{,\beta}=(U^{\alpha}U^{\gamma})_{,\beta}\ \eta_{\alpha\gamma }=2U^{\alpha}_{,\beta}U^{\gamma}\eta_{\alpha\gamma}$   notice that the last step follows from symmetry (equal footing of the two live indices).
-- Hence, we have $T^{\alpha \beta}_{,\beta}=nU^{\beta}( \frac{\rho +p}{n} U^{\alpha})_{, \beta} + p_{,\beta}\eta^{\alpha \beta}$. Now, contracting it with $U_{\alpha}$ (feeding **T** the one-form)
+- Moreover, we have $U^{\alpha}U_{\alpha}=-1 \rightarrow (U^{\alpha}U_{\alpha})_{,\beta}=0=(U^{\alpha}U^{\gamma}\eta_{\alpha \gamma})_{,\beta}=(U^{\alpha}U^{\gamma})_{,\beta}\ \eta_{\alpha\gamma }=2U^{\alpha}_{,\beta}U^{\gamma}\eta_{\alpha\gamma} \rightarrow U^{\alpha}_{,\beta}U_{\alpha}=0$    notice that the second last step follows from symmetry (equal footing of the two live indices).
+- Hence, we have $T^{\alpha \beta}_{,\beta}=nU^{\beta}( \frac{\rho +p}{n} U^{\alpha})_{, \beta} + p_{,\beta}\eta^{\alpha \beta}$. These are four equations. Now, contracting it with $U_{\alpha}$ (feeding **T** the one-form) gives a scalar (the time component of the above equation\tensor): $nU_{\alpha}U^{\beta}( \frac{\rho +p}{n} U^{\alpha})_{, \beta} + p_{,\beta}\eta^{\alpha \beta}U_{\alpha}$
+- The last term is just $p_{,\beta}U^{\beta}$ which is the derivative of $p$ along the worldline of the fluid element $\frac{dp}{d \tau}$.
+- In the first term, the derivative gives 0 when applied to $U^{\alpha}$ ($U_{\alpha}U^{\alpha}_{,\beta}=0$). Using $U_{\alpha}U^{\alpha}=-1$, we get $U^{\beta}[-n (\frac{\rho +p}{n})_{,\beta} +p_{,\beta}]=0$ 
+- Applying the quotient rue of derivatives, we get: $-U^{\beta}[\rho_{,\beta}- \frac{\rho +p}{n}n_{,\beta}]=0$ 
+- $\rightarrow \frac{d \rho}{d \tau}- \frac{\rho +p}{n} \frac{dn}{d \tau}=0$ 
+- Comparing with the results from thermodynamics, this equation is the same as : $$\frac{dS}{d \tau}=0=U^{\alpha}S_{,\alpha}$$
+- 

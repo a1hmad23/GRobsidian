@@ -159,3 +159,28 @@ $$n\equiv number\ density\ in\ the\ MCRF\ of\ the\ element$$
 *Conservation Of Particles*
 - $N^{\alpha}_{,\alpha}=nU^{\alpha}_{,\alpha}=0$
 
+### 4.6 Perfect Fluids
+
+- No viscosity and no heat conduction in the MCRF.
+
+*No Heat Conduction*
+- For any fluid element, in the MCRF, the only mode of energy transfer is heat conduction since no movement takes place. There is no head conduction in perfect fluids, therefore $T^{0i}=T^{i0}=0$. This means that entropy is constant, via the heat transfer and change in entropy relation.
+
+*No Viscosity*
+- This means forces should always be perpendicular to the interface. Hence, $T^{ij}=0\ unless\ i=j$, meaning that $T^{ij}$ should be a diagonal matrix.
+- Since no viscosity is a general statement independent of the spatial axes, it must be that $T^{ij}$ is diagonal in all MCRF frames. The only such matrix is a multiple of the identity.
+- Thus an x-surface will have it across only a force in the x-direction, similarly for y and z. All of these forces per unit are are equal (no preferred direction), and are called the pressure $p$.
+- Hence, $T^{ij}=p\delta^{ij}$
+- ![[Pasted image 20231122211827.png]]
+- Hence, in the MCRF $\rightarrow T^{\alpha \beta}=(\rho +p)U^{\alpha}U^{\beta}+p\eta^{\alpha \beta}$ 
+- Since this is a frame invariant formula: $$T=(\rho + p)\vec{U}\otimes \vec{U} +pg^{-1}$$The Stress-Energy Tensor for a perfect fluid.
+
+*Asides On The Meaning Of Pressure*
+- Comparing the above formula with for dust, we see that dust is a pressure free special case of a perfect fluid. Pressure comes from the flux of momentum, whether that comes from forces or particles crossing a boundary doesn't matter.
+
+*The Conservation Laws*
+- $T^{\alpha \beta}_{,\beta}=[(\rho +p)U^{\alpha}U^{\beta}+p\eta^{\alpha \beta}]_{,\beta}$ 
+- Assuming conservation of particles $N^{\beta}_{,\beta}=nU^{\beta}_{,\beta}=0$, we write the first term as $[\frac{\rho +p}{n}  U^{\alpha}nU^{\beta}]_{\beta}$. By the produce rule of derivatives, we have $\frac{\rho +p}{n}  U^{\alpha}_{,\beta}nU^{\beta} + \frac{\rho +p}{n}  U^{\alpha}nU^{\beta}_{,\beta}=\frac{\rho +p}{n}  U^{\alpha}_{,\beta}nU^{\beta}=nU^{\beta}( \frac{\rho +p}{n} U^{\alpha})_{, \beta}$.
+- As for the second term, $\eta^{\alpha \beta}$ is a constant matrix so $\eta^{\alpha \beta}_{,\gamma}=0$ 
+- Moreover, we have $U^{\alpha}U_{\alpha}=-1 \rightarrow (U^{\alpha}U_{\alpha})_{,\beta}=0=(U^{\alpha}U^{\gamma}\eta_{\alpha \gamma})_{,\beta}=(U^{\alpha}U^{\gamma})_{,\beta}\ \eta_{\alpha\gamma }=2U^{\alpha}_{,\beta}U^{\gamma}\eta_{\alpha\gamma}$   notice that the last step follows from symmetry (equal footing of the two live indices).
+- Hence, we have $T^{\alpha \beta}_{,\beta}=nU^{\beta}( \frac{\rho +p}{n} U^{\alpha})_{, \beta} + p_{,\beta}\eta^{\alpha \beta}$. Now, contracting it with $U_{\alpha}$ (feeding **T** the one-form)

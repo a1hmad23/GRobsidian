@@ -140,9 +140,22 @@ $$n\equiv number\ density\ in\ the\ MCRF\ of\ the\ element$$
 
 ![[Pasted image 20231120222434.png]]
 - The cube of side $l$ is a fluid element. Since $T^{ij}$ is the flux of momentum across j surface, and flux of momentum is momentum per unit time per unit area, while force is momentum per unit time so momentum flux is just force per unit area and $T^{ij}$ is momentum flux so $T^{ij}$ is force per unit area. Therefore, force across surface 1 is: $F^{i}_{1}=T^{ix}l^{2}$. Since F is not necessarily perpendicular to the surface, i runs from 1 to 3.
-- Similarly, force emanating from 2 to some neighbor is $F^{i}_{2}=T^{iy}l^{2}$ and theres $F^{i}_{3}$ and $F^{i}_{4}$.
+- Similarly, force emanating from 2 to some neighbor is $F^{i}_{2}=T^{iy}l^{2}$ and there's $F^{i}_{3}$ and $F^{i}_{4}$.
 - We are considering small fluid elements where $l \rightarrow 0$. Then, in order for infinitesimal mass to not have infinite acceleration which any finite force would produce, the total force on the fluid element must vanish.
-- From Newtons 3rd law, the force on the fluid in the x direction is: $-F^{i}_{1} - F^{i}_{3}$. Hence, we must have $F^{i}_{3}=-F^{i}_{1}$. With this knowledge, we compute torques about the z-axis through the center of the fluid element (which is why we ignored the top and bottom forces as they dont contribute to this torque).
+- From Newtons 3rd law, the force on the fluid in the x direction is: $-F^{i}_{1} - F^{i}_{3}$. Hence, we must have $F^{i}_{3}=-F^{i}_{1}$. With this knowledge, we compute torques about the z-axis through the center of the fluid element (which is why we ignored the top and bottom forces as they don't contribute to this torque).
 - find total torque, find an equation for angular acceleration which would depend inversely on the size of the fluid element which must be 0 which would give the symmetry of **T** (partially, repeat argument, as it was arbitrary, for other axes for full symmetry).
-- Since energy flux is the speed at which energy density is flowing, and since energy and mass are the same thing, energy flux is the speed at which mass density is flowing which is just momentum density. Therefore, $T^{0i}=T^{i0}$ 
-- 
+- Since energy flux is the speed at which energy density is flowing, and since energy and mass are the same thing, energy flux is the speed at which mass density is flowing which is just momentum density. Therefore, $T^{0i}=T^{i0}$ .
+
+*Conservation Of Energy Momentum*
+- Since **T** represents the momentum and energy content of a fluid, it can be used to represent the law of conservation of energy and momentum:
+	- Lets take a cubic element (we are gonna take the limit $l\rightarrow 0$ where the shape would become irrelevant so it doesn't effect the generality of the argument). ![[Pasted image 20231122184549.png]]
+	- The energy flowing in at the side 4 is $T^{0x}(x=0)$. It follows:
+	- ![[Pasted image 20231122185132.png]]
+	- Dividing by $l^{3}$ and taking the limit as $l\rightarrow 0$, we see that the RHS becomes the definitions of partial derivatives:
+	- $\frac{\partial}{\partial t}T^{00}=\frac{\partial}{\partial x}T^{0x} + \frac{\partial}{\partial y}T^{0y} + \frac{\partial}{\partial z}T^{0z}$ $\rightarrow$   $T^{00}_{,0}=T^{0x}_{,x}+T^{0y}_{,y}+T^{0z}_{,z}$  $$T^{0 \alpha}_{,\alpha}$$ which is the law of conservation of energy.
+- Similarly, for the conservation of $\alpha$ momentum: $$T^{\alpha \beta}_{,\beta}$$
+- These are just divergences.
+
+*Conservation Of Particles*
+- $N^{\alpha}_{,\alpha}=nU^{\alpha}_{,\alpha}=0$
+

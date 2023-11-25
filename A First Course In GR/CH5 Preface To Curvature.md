@@ -43,3 +43,20 @@
 
 ### 5.2 Tensor Algebra In Polar Coordinates
 
+- Let $(x,y)$ be coordinates in the Euclidean plane. Let $(\zeta, \eta)$ be new coordinates. Then, $(\zeta (x,y),\eta (x,y))$. Then, a displacement $(\Delta x,\Delta y)$ can be represented in the new coordinates as $(\Delta \zeta,\Delta \eta)$, where $\Delta \zeta=\frac{\partial \zeta}{\partial x} \Delta x +\frac{\partial \zeta}{\partial y}\Delta y$ and analogously for $\Delta \eta$. Since you can associate with the displacement an arrow, a geometrical object in space, it will be the same regardless of whichever coordinate system it is viewed in.
+
+*Vectors And One-Forms*
+- Vectors are geometrical objects whose components transform in the same manner as the displacement. Hence, displacement is defined to be a vector and anything that transforms in the same manner as it does is a vector.
+- Thus, we can write down a transformation matrix (Jacobian) for vector components:
+- The modern way is to associate with the gradient of a scalar function a geometrical object called the One-Form $\tilde{d}\phi$, whose components in any frame are just the partial derivatives of $\phi$ with respect to the coordinates of that frame.
+- These lead to a transformation rule for one-forms naturally, and so all one forms are defines. Vectors are then defines as functions of one forms that return a scalar, and hence must transform in the opposite way to a one-form.
+- The two transformation matrices are inverses of each other.
+
+*Curves And Vectors*
+- A path is a connected series of points in the plane. A curve is a parametrized path.
+- The derivative of a scalar field along a curve is $\frac{d\phi}{ds}$ which is equal to the contraction between the gradient one-form $\tilde{d}\phi$ and the tangent vector $\vec{V}$. Hence  $\frac{d\phi}{ds}=\langle \tilde{d}\phi,\vec{V} \rangle$.
+- A curve has a unique tangent, since both the path and parametrization are given.
+
+*Polar Coordinate Basis One-Forms*
+- $\vec{e}_{\alpha'}=\Lambda^{\beta}_{\alpha'}\vec{e}_{\beta} \rightarrow \vec{e}_{r}=\Lambda^{\beta}_{r}\vec{e}_{\beta}=\Lambda^{x}_{r}\vec{e}_{x} +\Lambda^{y}_{r}\vec{e}_{y}$   and analogously for theta.
+- $\tilde{\omega}^{\alpha'}=\Lambda^{\alpha'}_{\beta}\omega^{\beta}$  

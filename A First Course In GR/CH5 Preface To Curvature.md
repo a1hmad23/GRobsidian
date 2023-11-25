@@ -109,4 +109,11 @@
 
 *Derivatives Of One-Forms And Tensors Of Higher Types*
 - Since a scalar field $\phi$ depends on no basis vectors, its derivative the gradient one form $\tilde{d}\phi$ is equivalent to its covariant derivative $\nabla \phi$.
-- For a fixed $\beta$, $\frac{\partial \tilde{p}}{\partial x^{\beta}}=\nabla_{\beta} \tilde{p}$ is a one-form and $\frac{\partial \vec{V}}{\partial x^{\beta}}=\nabla_{\beta}\vec{V}$ is a vector.  
+- For a fixed $\beta$, $\frac{\partial \tilde{p}}{\partial x^{\beta}}=\nabla_{\beta} \tilde{p}$ is a one-form, $\frac{\partial \vec{V}}{\partial x^{\beta}}=\nabla_{\beta}\vec{V}$ is a vector, and  $\langle \tilde{p},\vec{V}\rangle=\phi=p_{\alpha}V^{\alpha}$ is a scalar.
+- Taking derivative of the scalar: $\nabla_{\beta}\phi=\frac{\partial p_{\alpha}}{\partial x^{\alpha}}V^{\alpha}+ p_{\alpha} \frac{\partial V^{\alpha}}{\partial x^{\alpha}}$
+- After substituting and renaming indices: $\nabla_{\beta}\phi=(\frac{\partial p_{\alpha}}{\partial x^{\beta}} -p_{\mu}\Gamma^{\mu}_{\alpha \beta})V^{\alpha} +p_{\alpha}V^{\alpha}_{;\beta}$ 
+- Now, the term on the LSH is a one form, the term outside brackets on the RHS is a one for, solving for the one in the brackets suggests it should be a one form. Moreover, it is a 2 indexed term that is being contracted with a vector, giving out a one form. Also, it has the form of a covariant derivative.
+- Hence, we regard the term inside the brackets as the covariant derivative of a one form $\tilde{p}$ :
+- $\nabla \tilde{p}\rightarrow \nabla_{\beta}p_{\alpha}=\nabla p_{\alpha \beta}=p_{\alpha ; \beta}= p_{\alpha , \beta}-p_{\mu}\Gamma^{\mu}_{\alpha \beta}$   
+- Thus, we have the covariant derivative of a scalar: $\nabla_{\beta}(p_{\alpha}V^{\alpha})=p_{\alpha ; \beta}V^{\alpha} + p_{\alpha}V^{\alpha;\beta}$ 
+- Thus, covariant differentiation obeys the same sort of product rule as ordinary differentiation: it must do this since in cartesian coordinates $\nabla$ is just partial differentiation of components which includes the product rule, so the above general form must reduce to it in the cartesian case. For that to be possible, there had to be a product rule.

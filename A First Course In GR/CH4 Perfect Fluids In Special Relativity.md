@@ -164,7 +164,7 @@ $$n\equiv number\ density\ in\ the\ MCRF\ of\ the\ element$$
 - No viscosity and no heat conduction in the MCRF.
 
 *No Heat Conduction*
-- For any fluid element, in the MCRF, the only mode of energy transfer is heat conduction since no movement takes place. There is no head conduction in perfect fluids, therefore $T^{0i}=T^{i0}=0$. This means that entropy is constant, via the heat transfer and change in entropy relation.
+- For any fluid element, in the MCRF, the only mode of energy transfer is heat conduction since no movement takes place. There is no heat conduction in perfect fluids, therefore $T^{0i}=T^{i0}=0$. This means that entropy is constant, via the heat transfer and change in entropy relation.
 
 *No Viscosity*
 - This means forces should always be perpendicular to the interface. Hence, $T^{ij}=0\ unless\ i=j$, meaning that $T^{ij}$ should be a diagonal matrix.
@@ -179,14 +179,24 @@ $$n\equiv number\ density\ in\ the\ MCRF\ of\ the\ element$$
 - Comparing the above formula with for dust, we see that dust is a pressure free special case of a perfect fluid. Pressure comes from the flux of momentum, whether that comes from forces or particles crossing a boundary doesn't matter.
 
 *The Conservation Laws*
-- $T^{\alpha \beta}_{,\beta}=[(\rho +p)U^{\alpha}U^{\beta}+p\eta^{\alpha \beta}]_{,\beta}$ 
-- Assuming conservation of particles $N^{\beta}_{,\beta}=nU^{\beta}_{,\beta}=0$, we write the first term as $[\frac{\rho +p}{n}  U^{\alpha}nU^{\beta}]_{\beta}$. By the produce rule of derivatives, we have $\frac{\rho +p}{n}  U^{\alpha}_{,\beta}nU^{\beta} + \frac{\rho +p}{n}  U^{\alpha}nU^{\beta}_{,\beta}=\frac{\rho +p}{n}  U^{\alpha}_{,\beta}nU^{\beta}=nU^{\beta}( \frac{\rho +p}{n} U^{\alpha})_{, \beta}$.
+- $T^{\alpha \beta}_{,\beta}=[(\rho +p)U^{\alpha}U^{\beta}+p\eta^{\alpha \beta}]_{,\beta}=0$ 
+- Assuming conservation of particles $N^{\beta}_{,\beta}=nU^{\beta}_{,\beta}=0$, we write the first term as $[\frac{\rho +p}{n}  U^{\alpha}nU^{\beta}]_{,\beta}$. By the produce rule of derivatives, we have $(\frac{\rho +p}{n}  U^{\alpha})_{,\beta}nU^{\beta} + \frac{\rho +p}{n}  U^{\alpha}nU^{\beta}_{,\beta}=(\frac{\rho +p}{n}  U^{\alpha})_{,\beta}nU^{\beta}=nU^{\beta}( \frac{\rho +p}{n} U^{\alpha})_{, \beta}$.
 - As for the second term, $\eta^{\alpha \beta}$ is a constant matrix so $\eta^{\alpha \beta}_{,\gamma}=0$ 
 - Moreover, we have $U^{\alpha}U_{\alpha}=-1 \rightarrow (U^{\alpha}U_{\alpha})_{,\beta}=0=(U^{\alpha}U^{\gamma}\eta_{\alpha \gamma})_{,\beta}=(U^{\alpha}U^{\gamma})_{,\beta}\ \eta_{\alpha\gamma }=2U^{\alpha}_{,\beta}U^{\gamma}\eta_{\alpha\gamma} \rightarrow U^{\alpha}_{,\beta}U_{\alpha}=0$    notice that the second last step follows from symmetry (equal footing of the two live indices).
-- Hence, we have $T^{\alpha \beta}_{,\beta}=nU^{\beta}( \frac{\rho +p}{n} U^{\alpha})_{, \beta} + p_{,\beta}\eta^{\alpha \beta}$. These are four equations. Now, contracting it with $U_{\alpha}$ (feeding **T** the one-form) gives a scalar (the time component of the above equation\tensor): $nU_{\alpha}U^{\beta}( \frac{\rho +p}{n} U^{\alpha})_{, \beta} + p_{,\beta}\eta^{\alpha \beta}U_{\alpha}$
+- Hence, we have $T^{\alpha \beta}_{,\beta}=nU^{\beta}( \frac{\rho +p}{n} U^{\alpha})_{, \beta} + p_{,\beta}\eta^{\alpha \beta}$. These are four equations. Now, contracting it with $U_{\alpha}$ (feeding **T** the second one-form, the first was the gradient one form) gives a scalar (the time component of the above equation\tensor): $nU_{\alpha}U^{\beta}( \frac{\rho +p}{n} U^{\alpha})_{, \beta} + p_{,\beta}\eta^{\alpha \beta}U_{\alpha}$
 - The last term is just $p_{,\beta}U^{\beta}$ which is the derivative of $p$ along the worldline of the fluid element $\frac{dp}{d \tau}$.
 - In the first term, the derivative gives 0 when applied to $U^{\alpha}$ ($U_{\alpha}U^{\alpha}_{,\beta}=0$). Using $U_{\alpha}U^{\alpha}=-1$, we get $U^{\beta}[-n (\frac{\rho +p}{n})_{,\beta} +p_{,\beta}]=0$ 
 - Applying the quotient rue of derivatives, we get: $-U^{\beta}[\rho_{,\beta}- \frac{\rho +p}{n}n_{,\beta}]=0$ 
-- $\rightarrow \frac{d \rho}{d \tau}- \frac{\rho +p}{n} \frac{dn}{d \tau}=0$ 
+- $\rightarrow \frac{d \rho}{d \tau}- \frac{\rho +p}{n} \frac{dn}{d \tau}=0$ [?]
 - Comparing with the results from thermodynamics, this equation is the same as : $$\frac{dS}{d \tau}=0=U^{\alpha}S_{,\alpha}$$
+- Thus, the flow of a perfect fluid conserves entropy. Law of conservation of energy is embodied in the component of the conservation equations, parallel to $U^{\alpha}$.
+- By contraction with $U_{\alpha}$ we got the 0th component of $T^{\alpha \beta}_{,\beta}$. To get the other three components, we set $\alpha=i$ in $nU^{\beta}( \frac{\rho +p}{n} U^{i})_{, \beta} + p_{,\beta}\eta^{i \beta}$. In the MCRF $U^{i}=0$ but $U^{i}_{,\beta}$ is not equal to 0. [?] 
+- Since $U^{i}=0$ the $\beta th$ derivative of $\frac{\rho +p}{n}$ contributes nothing: $(\rho +p)U^{i}_{,\beta}U^{\beta} +p_{,\beta}\eta^{i \beta}=0$ 
+- Lowering the index $i$ changes nothing. we get $\eta^{\beta}_{i}$ though, so :  $(\rho +p)U_{i,\beta}U^{\beta} +p_{,i}=0$ 
+- $U_{i,\beta}U^{\beta}$ is the definition of four-acceleration, so we have: $$(\rho +p)a_{i}+p_{,i}=0$$
+- This equation is essentially F=ma, where $(\rho +p)$ plays the role of inertial mass density and $-p_{,i}$ is the force on it. but the neighbor across also pushes with the same pressure, thats why only if theres a change in pressure will there be an acceleration.
+
+### 4.7 Importance For General Relativity
+
+- In Newton's theory, the source of the (gravitational) field is the mass density $\rho_{0}$ . We include all energies since mass and energy are interchangeable in relativity. So the source of the field should be all energies, the density of total mass energy $T^{00}$. But to have as the source of the field only one component of a tensor would give a non invariant theory of gravity: one would have to choose a preferred frame in order to calculate $T^{00}$. Therefore, Einstein guessed that the source of the field ought to be **T**: all stresses and pressures and momenta must also act as sources. Combining this with his insight into curved spaces led him to GR.
 - 

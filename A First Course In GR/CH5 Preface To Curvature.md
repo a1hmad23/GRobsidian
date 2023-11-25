@@ -88,5 +88,25 @@
 - The Christoffel symbols are just the coefficient of the derivatives of basis vectors. To calculate them in polar coordinates, one can express the polar vector basis in terms of the cartesian basis, take derivatives with respect to polar coordinates, convert the result in terms of polar basis vectors. The cartesian basis is only used for the ease of taking derivatives (they are constant vectors). The coefficients one gets are then the Christoffel symbols.
 
 *The Covariant Derivative*
-- The derivative of a vector can now be written as $\frac{\partial \vec{V}}{\partial x^\beta}=\frac{\partial V^{\alpha}}{\partial x^{\beta}}\vec{e}_{\alpha}+V^{\alpha}\frac{\partial \vec{e}_{\alpha}}{\partial x^{\beta}}$ 
-- 
+- The derivative of a vector can now be written as $\frac{\partial \vec{V}}{\partial x^\beta}=\frac{\partial V^{\alpha}}{\partial x^{\beta}}\vec{e}_{\alpha}+V^{\alpha}\Gamma^{\mu}_{\alpha \beta}\vec{e}_\mu$ 
+- Relabeling the indices: $\frac{\partial \vec{V}}{\partial x^\beta}=(\frac{\partial V^{\alpha}}{\partial x^{\beta}}+V^{\mu}\Gamma^{\alpha}_{\mu \beta})\vec{e}_\alpha$     
+- Hence, the vector field $\frac{\partial \vec{V}}{\partial x^\beta}$ has components $V^{\alpha}_{;\beta}=V^{\alpha}_{,\beta}+V^{\mu}\Gamma^{\alpha}_{\mu \beta}$ 
+- Hence, we have the derivative of a vector field $\vec{V}$: $$\frac{\partial \vec{V}}{\partial x^\beta}=V^{\alpha}_{;\beta}\vec{e}_{\alpha}$$
+- Here, for a fixed $\beta$, the derivative of a vector is just a vector. However, since $\beta$ can take on two values, for a fixed vector, we get four components, with two corresponding to each value $\beta$ can take.
+- Now, let us define a $\begin{pmatrix}1\\ 1\end{pmatrix}$ tensor $\nabla \vec{V}=V^{\alpha}_{;\beta}\vec{e}_{\alpha}\tilde{\omega}^{\beta}$ 
+- This has components $(\nabla \vec{V})^{\alpha}_{\beta}=V^{\alpha}_{;\beta}$ 
+- Upon contraction of $\nabla \vec{V}$ with a basis vector $\vec{e}_{\beta}$: $$\langle \nabla \vec{V}, \vec{e}_{\beta} \rangle= V^{\alpha}_{;\beta}\vec{e}_{\alpha} \langle \tilde{\omega}^{\beta}, \vec{e}_{\beta} \rangle=V^{\alpha}_{;\beta}\vec{e}_{\alpha}=\frac{\partial \vec{V}}{\partial x^\beta}$$
+- Hence, to specify the value of $\beta$, we need to contract it with $\vec{e}_{\beta}$ This is why for a fixed $\beta$ we get a single vector field, but for two values of $\beta$ we get a tensor field: one vector field corresponding to each $\beta$, to choose the value of $\beta$/vector field/components we want to pick, we have to feed in a vector, and then we get in the domain of that vector field.
+- Hence, the derivative of a vector can be thought of as contraction between a one higher rank tensor with a specific basis vector. The Covariant derivative is the higher rank tensor. 
+- The components of the covariant derivative $(\nabla \vec{V})^{\alpha}_{\beta}=V^{\alpha}_{;\beta}$ can be obtained in two ways. One is to calculate $V^{\alpha}_{;\beta}=V^{\alpha}_{,\beta}+V^{\mu}\Gamma^{\alpha}_{\mu \beta}$  in whatever coordinate system one is in by knowledge of the Christoffel symbols. The other is to make use of the fact that they are tensor components and so can be obtained by transformation: transform them from cartesian coordinates by use of transformation matrices.
+
+*Divergence And Laplacian*
+- The divergence of a vector $\vec{V}$ is the scalar obtained by contracting $\nabla \vec{V}$ with basis one forms and basis vectors, that is, contracting $(\nabla \vec{V})^{\alpha}_{\beta}$ on its two indices: $(\nabla \vec{V})^{\alpha}_{\alpha}$ 
+- In Cartesian $(\nabla \vec{V})^{\alpha}_{\alpha}=V^{\alpha}_{,\alpha}$ 
+- More generally, $(\nabla \vec{V})^{\alpha}_{\alpha}=V^{\alpha}_{;\alpha}= V^{\alpha}_{,\alpha}+V^{\mu}\Gamma^{\alpha}_{\mu \alpha}$  
+- Notice the contraction on Christoffel symbols.
+- Laplacian is the divergence of the gradient. So we have to convert the gradient one form to a vector gradient and take its divergence.
+
+*Derivatives Of One-Forms And Tensors Of Higher Types*
+- Since a scalar field $\phi$ depends on no basis vectors, its derivative the gradient one form $\tilde{d}\phi$ is equivalent to its covariant derivative $\nabla \phi$.
+- For a fixed $\beta$, $\frac{\partial \tilde{p}}{\partial x^{\beta}}=\nabla_{\beta} \tilde{p}$ is a one-form and $\frac{\partial \vec{V}}{\partial x^{\beta}}=\nabla_{\beta}\vec{V}$ is a vector.  

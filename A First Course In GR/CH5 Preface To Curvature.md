@@ -59,4 +59,34 @@
 
 *Polar Coordinate Basis One-Forms*
 - $\vec{e}_{\alpha'}=\Lambda^{\beta}_{\alpha'}\vec{e}_{\beta} \rightarrow \vec{e}_{r}=\Lambda^{\beta}_{r}\vec{e}_{\beta}=\Lambda^{x}_{r}\vec{e}_{x} +\Lambda^{y}_{r}\vec{e}_{y}$   and analogously for theta.
-- $\tilde{\omega}^{\alpha'}=\Lambda^{\alpha'}_{\beta}\omega^{\beta}$  
+- $\tilde{\omega}^{\alpha'}=\Lambda^{\alpha'}_{\beta}\omega^{\beta}\rightarrow \tilde{d}r=\Lambda^{r}_{\beta}\omega^{\beta}=\Lambda^{r}_{x}\tilde{d}x+\Lambda^{r}_{y}\tilde{d}y$ 
+- The basis vectors are not constant. Both their magnitudes and directions change. The theta basis vector has a component of 1 for theta displacement. It must be longer to do this at larger radii.
+
+*Metric Tensor*
+- Dot products are calculates by knowing the metric tensor components in that frame.
+- In Cartesian Coordinates **g**$(\vec{e}_{\alpha},\vec{e}_{\beta})=\delta_{\alpha \beta}$ 
+- In Polar coordinates $g_{\alpha' \beta'}=\vec{e}_{\alpha'}\cdot \vec{e}_{\beta'}$  
+- A convenient way to present both information about the metric tensor and the coordinates is the infinitesimal line element $d \vec{l}$ calculated as follows: $(d \vec{l} \cdot d \vec{l})^\frac{1}{2}=$|$dr \vec{e}_{r}+d \theta \vec{e}_{\theta}$|$=dr^{2}+r^{2}d \theta^{2}$ 
+- Any 2nd rank tensor can be written as a linear combination of basis one forms:
+- ![[Pasted image 20231125210354.png]]
+- When this is fed the vector line element, it produces the above equation.
+- The inverse metric has components $g^{\alpha \beta}$  and can be used as a mapping between one form components and vector components:
+	- Let $\phi$ be a scalar field. The gradient one-form has components $(\tilde{d}\phi)_{\beta}=\phi_{,\beta}= \frac{\partial \phi}{\partial x^{\beta}}$. The vector gradient has components $(\vec{d \phi})^{\alpha}=g^{\alpha \beta}\phi_{,\beta}\rightarrow (\vec{d}\phi)^{r}=g^{r \beta}\phi_{,\beta}=g^{rr}\phi_{,r}+g^{r\theta}\phi_{\theta}$
+
+
+### 5.3 Tensor Calculus In Polar Coordinates
+
+- Consider the vector $\vec{e}_{x}$ For different values of $x$, this is a constant vector field. Now consider its components in polar coordinates: $(\vec{e}_{x})^{\alpha'}=\Lambda^{\alpha'}_{\beta}(\vec{e}_{x})^{\beta}\rightarrow (\vec{e}_{x})^{r}=\Lambda^{r}_{x}(\vec{e}_{x})^{x}\rightarrow \vec{e}_{x}\rightarrow_{polar}(\Lambda^{r}_{x},\Lambda^{\theta}_{x})=(cos\theta,\frac{-1}{r}sin \theta)$
+- These are not constant, even though the vector is. Their derivatives are also not 0. These point to the fact that we have to differentiate the basis vectors too.
+
+*Derivatives Of Basis Vectors*
+
+*Derivatives Of General Vectors*
+-  A general vector $\vec{V}$ has components on the polar basis of $(V^{r},V^{\theta})$. Its derivative with respect to $r$ is then: $\frac{\partial \vec{V}}{\partial r}=\frac{\partial V^{\alpha}}{\partial r}\vec{e}_{\alpha}+V^{\alpha}\frac{\partial \vec{e}_{\alpha}}{\partial r}$. More generally, in any coordinate basis, we have $$\frac{\partial \vec{V}}{\partial x^\beta}=\frac{\partial V^{\alpha}}{\partial x^{\beta}}\vec{e}_{\alpha}+V^{\alpha}\frac{\partial \vec{e}_{\alpha}}{\partial x^{\beta}}$$
+*The Christoffel Symbols*
+- The term $\frac{\partial \vec{e}_{\alpha}}{\partial x^{\beta}}$ is just a limit of a difference of a vector, so is itself a vector and hence can be expressed as $\frac{\partial \vec{e}_{\alpha}}{\partial x^{\beta}}= \Gamma^{\mu}_{\alpha \beta}\vec{e}_\mu$ 
+- The Christoffel symbols are just the coefficient of the derivatives of basis vectors. To calculate them in polar coordinates, one can express the polar vector basis in terms of the cartesian basis, take derivatives with respect to polar coordinates, convert the result in terms of polar basis vectors. The cartesian basis is only used for the ease of taking derivatives (they are constant vectors). The coefficients one gets are then the Christoffel symbols.
+
+*The Covariant Derivative*
+- The derivative of a vector can now be written as $\frac{\partial \vec{V}}{\partial x^\beta}=\frac{\partial V^{\alpha}}{\partial x^{\beta}}\vec{e}_{\alpha}+V^{\alpha}\frac{\partial \vec{e}_{\alpha}}{\partial x^{\beta}}$ 
+- 

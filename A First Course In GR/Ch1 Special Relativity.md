@@ -1,6 +1,6 @@
 ### 1.1 Fundamental Principles of SR
 
-- Regarding (t,x,y,z) as 4-coordinates of a 4D space(time) began the geometrical point of view.
+- Regarding $(t,x,y,z)$ as 4-coordinates of a 4D space(time) began the geometrical point of view.
 - Postulates of SR:
 	 1. Principle of relativity: No absolute motion; all motion is relative; can only determine your motion with respect to something else. Physics in all inertial frames of reference is the same.
 	2. Universality of the speed of light: All inertial observers measure the speed of light to be c.

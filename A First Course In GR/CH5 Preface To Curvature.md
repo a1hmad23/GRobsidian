@@ -104,16 +104,35 @@
 - The divergence of a vector $\vec{V}$ is the scalar obtained by contracting $\nabla \vec{V}$ with basis one forms and basis vectors, that is, contracting $(\nabla \vec{V})^{\alpha}_{\beta}$ on its two indices: $(\nabla \vec{V})^{\alpha}_{\alpha}$ 
 - In Cartesian $(\nabla \vec{V})^{\alpha}_{\alpha}=V^{\alpha}_{,\alpha}$ 
 - More generally, $(\nabla \vec{V})^{\alpha}_{\alpha}=V^{\alpha}_{;\alpha}= V^{\alpha}_{,\alpha}+V^{\mu}\Gamma^{\alpha}_{\mu \alpha}$  
-- Notice the contraction on Christoffel symbols.
-- Laplacian is the divergence of the gradient. So we have to convert the gradient one form to a vector gradient and take its divergence.
+- Notice the sum on Christoffel symbols.
+- Laplacian is the divergence of the gradient. So we have to convert the gradient one form to a vector gradient and take its divergence (simply input that vector into the formula obtained for the divergence of a general vector).
 
 *Derivatives Of One-Forms And Tensors Of Higher Types*
 - Since a scalar field $\phi$ depends on no basis vectors, its derivative the gradient one form $\tilde{d}\phi$ is equivalent to its covariant derivative $\nabla \phi$.
 - For a fixed $\beta$, $\frac{\partial \tilde{p}}{\partial x^{\beta}}=\nabla_{\beta} \tilde{p}$ is a one-form, $\frac{\partial \vec{V}}{\partial x^{\beta}}=\nabla_{\beta}\vec{V}$ is a vector, and  $\langle \tilde{p},\vec{V}\rangle=\phi=p_{\alpha}V^{\alpha}$ is a scalar.
-- Taking derivative of the scalar: $\nabla_{\beta}\phi=\frac{\partial p_{\alpha}}{\partial x^{\alpha}}V^{\alpha}+ p_{\alpha} \frac{\partial V^{\alpha}}{\partial x^{\alpha}}$
+- Taking derivative of the scalar: $\nabla_{\beta}\phi=\frac{\partial p_{\alpha}}{\partial x^{\beta}}V^{\alpha}+ p_{\alpha} \frac{\partial V^{\alpha}}{\partial x^{\beta}}$
 - After substituting and renaming indices: $\nabla_{\beta}\phi=(\frac{\partial p_{\alpha}}{\partial x^{\beta}} -p_{\mu}\Gamma^{\mu}_{\alpha \beta})V^{\alpha} +p_{\alpha}V^{\alpha}_{;\beta}$ 
-- Now, the term on the LSH is a one form, the term outside brackets on the RHS is a one for, solving for the one in the brackets suggests it should be a one form. Moreover, it is a 2 indexed term that is being contracted with a vector, giving out a one form. Also, it has the form of a covariant derivative.
+- Now, the term on the LSH is a one form, the term outside brackets on the RHS is a one form, solving for the one in the brackets suggests it should be a one form. Moreover, it is a 2 indexed term that is being contracted with a vector, giving out a one form. Also, it has the form of a covariant derivative.
 - Hence, we regard the term inside the brackets as the covariant derivative of a one form $\tilde{p}$ :
-- $\nabla \tilde{p}\rightarrow \nabla_{\beta}p_{\alpha}=\nabla p_{\alpha \beta}=p_{\alpha ; \beta}= p_{\alpha , \beta}-p_{\mu}\Gamma^{\mu}_{\alpha \beta}$   
-- Thus, we have the covariant derivative of a scalar: $\nabla_{\beta}(p_{\alpha}V^{\alpha})=p_{\alpha ; \beta}V^{\alpha} + p_{\alpha}V^{\alpha;\beta}$ 
+- $\nabla \tilde{p}\rightarrow \nabla_{\beta}p_{\alpha}=\nabla p_{\alpha \beta}=p_{\alpha ; \beta}= p_{\alpha , \beta}-p_{\mu}\Gamma^{\mu}_{\alpha \beta}$ 
+- This is a $\begin{pmatrix}0\\ 2\end{pmatrix}$ tensor when $\beta$ value is not specified. It needs a vector input to turn into a one-form field/one-form and then another to pick a specific component of that field/one-form
+- Thus, we have the covariant derivative of a scalar: $\nabla_{\beta}(p_{\alpha}V^{\alpha})=p_{\alpha ; \beta}V^{\alpha} + p_{\alpha}V^{\alpha}_{;\beta}$  
 - Thus, covariant differentiation obeys the same sort of product rule as ordinary differentiation: it must do this since in cartesian coordinates $\nabla$ is just partial differentiation of components which includes the product rule, so the above general form must reduce to it in the cartesian case. For that to be possible, there had to be a product rule.
+- The two formulae for the components of the covariant derivative of a vector and a one-form respectively are: $$V^{\alpha}_{;\beta}=V^{\alpha}_{,\beta}+V^{\mu}\Gamma^{\alpha}_{\mu \beta } $$$$p_{\alpha;\beta}=p_{\alpha,\beta}-p_{\mu}\Gamma^{\mu}_{\alpha \beta}$$
+- The derivative index $\beta$ is the last one on $\Gamma$, the other indices are where they should be.
+- Since the only reason the covariant derivative was different than a normal derivative was the basis vectors, it should coincide with a normal partial derivatives on scalar and should satisfy the Leibniz rule:
+	- $∇_{μ}(X^{ν}X_{ν})=(∇_{μ}X^{ν})X_{ν}+X^{ν}(∇_{μ}X_{ν})=∂_{μ}(X^{ν}X_{ν})=(∂_{μ}X^{ν})X_{ν}+X^{ν}(∂_{μ}X_{ν})$  
+	- Now, since we knew the covariant derivative for a vector, the covariant derivative for a one-form followed.
+- For covariant derivatives of tensors of higher types: For every up index, add a Christoffel symbol contracted with the tensor on that index. For every down index, _subtract_ such a term instead.
+![[Pasted image 20231126114516.png]]
+
+### 5.4 Christoffel Symbols And The Metric
+
+- In Cartesian coordinates, the components of a one-form and its associated vector are equal, and since the components of $\nabla$ are acquired just through partial differentiation of components (in Cartesian coordinates), it follows that the components of the covariant derivative of a one-form and a vector must be equal in cartesian coordinates.
+- Hence, the covariant derivatives themselves must only differ in the position of their indices (they would be tensors of different rank/ in different spaces), the metric tensor can be used to match the indices (connect the two via forming a map between the two spaces). 
+- Hence, if we have $\tilde{V}=$**g**$(\vec{V},\ )$, then $\nabla_{\beta}\tilde{V}=$**g**$(\nabla_{\beta}\vec{V},\ )$. However, this is a tensor equation- two tensors are equal to each other- they have the same components and are of the same type. So, even though this was derived from some specific frame, they are equal in that frame and transform in the same manner (because they are of the same type), this relation must be true in all frames: its a tensor equation without any reference to components.
+- Hence, $$V_{\alpha;\beta}=g_{\alpha \mu}V^{\mu}_{;\beta}$$
+- The above argument another way:
+	- Let the unprimed indices indicate cartesian coordinates and the primed one indicate a general coordinate system.
+	- The statement $V_{\alpha'}=g_{\alpha' \beta'}V^{\beta'}$ valid in all coordinate systems.
+	- In Cartesian, $g_{\alpha \mu}=\delta_{\alpha \mu} \rightarrow V_{\alpha}=V^{\alpha}$  

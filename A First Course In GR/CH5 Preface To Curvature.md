@@ -134,5 +134,32 @@
 - Hence, $$V_{\alpha;\beta}=g_{\alpha \mu}V^{\mu}_{;\beta}$$
 - The above argument another way:
 	- Let the unprimed indices indicate cartesian coordinates and the primed one indicate a general coordinate system.
-	- The statement $V_{\alpha'}=g_{\alpha' \beta'}V^{\beta'}$ valid in all coordinate systems.
-	- In Cartesian, $g_{\alpha \mu}=\delta_{\alpha \mu} \rightarrow V_{\alpha}=V^{\alpha}$  
+	- The statement $V_{\alpha'}=g_{\alpha' \mu'}V^{\mu'}$ valid in all coordinate systems.
+	- In Cartesian, $g_{\alpha \mu}=\delta_{\alpha \mu} \rightarrow V_{\alpha}=V^{\alpha}$ and the Christoffel symbols vanish so $V_{\alpha;\beta}=V_{\alpha,\beta}$ and $V^{\alpha}_{;\beta}=V^{\alpha}_{,\beta}$. So, $V_{\alpha, \beta}=V^{\alpha}_{,\beta}$. It follows that $V^{\alpha}_{;\beta}=V_{\alpha;\beta}$ 
+	- Hence, in Cartesian, $V^{\alpha}_{;\beta}=g_{\alpha \mu}V^{\mu}_{;\beta}$ and coupling this with $V^{\alpha}_{;\beta}=V_{\alpha;\beta}$ , we have $V_{\alpha;\beta}=g_{\alpha \mu}V^{\mu}_{;\beta}$ which is a tensor equation valid in all coordinate frames.
+
+- Lets take the $\beta$th covariant derivative of $V_{\alpha'}=g_{\alpha' \mu'}V^{\mu'}$:
+	- We apply the Leibniz product rule that the covariant derivative obeys.
+	- $V_{\alpha';\beta'}=g_{\alpha' \mu';\beta'}V^{\mu'}+g_{\alpha' \mu'}V^{\alpha'}_{;\beta'}$  
+	- It follows (from the map provided by the metric between the covariant derivative of a vector and a one-form) that $g_{\alpha' \mu';\beta'}=0$  in all coordinate systems.
+
+- In Cartesian, $g_{\alpha \mu;\beta}=g_{\alpha \mu;\beta}=g_{\alpha \mu,\beta}=\delta_{\alpha \mu, \beta}=0$
+- Null tensors are not transformed by transformation matrices but lets calculate the covariant derivative of the metric tensor explicitly in general coordinates:
+	- Applying the product rule and keeping in mind the - sign because of the lower indices:
+	- $(\nabla g)_{\alpha' \mu' \beta'}= g_{\alpha' \mu';\beta'}= g_{\alpha' \mu', \beta'} -g_{\alpha' \nu'}\Gamma^{\nu}_{\mu'\beta}-g_{\nu \mu'}\Gamma^{\nu}_{\mu' \beta'}$ 
+	- These must evaluate to 0 after all the sums have taken place in a specific coordinate system.
+
+*Calculating The Christoffel Symbols From The Metric*
+- From the vanishing of the covariant derivative of the metric, we can find equations for the Christoffel symbols in terms of $g_{\alpha \beta, \mu}$ and vice versa, giving as easy way to derive the Christoffel symbols.
+- First, we prove that the Christoffel symbols are symmetric in their two lower indices $T^{\mu}_{\alpha \beta}=T^{\mu}_{\beta \alpha}$:
+	- Consider a scalar field $\phi$. Its first derivative $\nabla \phi$ is a one-form with components $\phi_{,\beta}$
+	- Its second covariant derivative $\nabla \nabla \phi$ is a $\begin{pmatrix}0\\ 2\end{pmatrix}$ tensor with components $\phi_{,\beta;\alpha}$ 
+	- In Cartesian coordinates, the covariant derivative is just the normal derivative so the components are $\phi_{,\beta;\alpha}=\phi_{,\beta,\alpha}= \frac{\partial}{\partial x^{\alpha}} \frac{\partial}{\partial x^{\beta}}\phi$  
+	- These are symmetric in $\alpha$ and $\beta$.
+	- This means, in Cartesian coordinates, $\nabla \nabla \phi(\vec{e}_{\alpha},\vec{e}_{\beta})=\nabla \nabla \phi(\vec{e}_{\beta},\vec{e}_{\alpha})$. Now, since tensors are linear functions, we can sneak in the components for some vectors and then this equation will become $\nabla \nabla \phi(\vec{A},\vec{B})=\nabla \nabla \phi(\vec{B},\vec{A})$.
+	- This is a tensor equation and so must be true in all frames.
+	- Hence, if a tensor is symmetric in one frame, it must be symmetric in all frames.
+	- Therefore, we have, $\phi_{,\alpha;\beta}=\phi_{,\beta;\alpha}$  in all bases.
+	- These are covariant derivatives of one-forms, so $\phi_{,\alpha,\beta}-\phi_{,\mu}\Gamma^{\mu}_{\alpha \beta}=\phi_{,\beta,\alpha}-\phi_{,\mu}\Gamma^{\mu}_{\beta \alpha}$  
+	- Here, the two one-forms will cancel out, leaving the symmetry of the Christoffel symbols $$T^{\mu}_{\alpha \beta}=T^{\mu}_{\beta \alpha}$$
+- 

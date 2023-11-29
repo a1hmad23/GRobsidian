@@ -178,5 +178,3 @@
 - However, if we keep the $\alpha$ label, we do get that the $\mu$,$\beta$ components of the Christoffel symbols are components of one single tensor. However, there is no single tensor whose components are the whole of $T^{\mu}_{\alpha \beta}$ with $\alpha$ allowed to vary. The combination $V^{\beta}_{,\alpha} +\Gamma^{\beta}_{\mu \alpha}V^{\mu}$ are the components of one single tensor.
 
 ### 5.6 Noncoordinate Bases
-
-- 

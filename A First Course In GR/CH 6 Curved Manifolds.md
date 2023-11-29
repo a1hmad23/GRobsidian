@@ -40,5 +40,15 @@
 - Having found a basis at some point $P$ for which the metric is $\eta$ , it is possible to find coordinates such that, in the neighborhood of $P$, the metric is nearly $\eta$  This is embodied in the theorem that having chosen a point $P$ of the manifold, a coordinate system {$x^{\alpha}$} can be found whose origin is at $P$ and in which $g_{\alpha \beta}(x^{\mu})=\eta_{\alpha \beta}+0[(x^{\mu})^{2}]$
 - So the metric is nearly that of SR, the differences being second order in the coordinates. Such coordinate systems are referred to as local Lorentz frames.
 - The above theorem can be put another way:
-	- $g_{\alpha \beta}(P)=\eta_{\alpha \beta}$ for all $al$
-	- 
+	- $g_{\alpha \beta}(P)=\eta_{\alpha \beta}$ for all $\alpha, \ \beta$
+	- $\frac{\partial}{\partial x^{\gamma}}g_{\alpha \beta}(P)=0$  here a 2x term will appear which is 0 at the origin- x=0
+	- $\frac{\partial^{2}}{\partial x^{\gamma} x^{\mu}}g_{\alpha \beta}(P) \neq 0$  for at least some values of $\alpha, \ \beta, \ \gamma, \ \mu$ if the manifold is not exactly flat. 
+
+- The existence of local Lorenz frames is merely the statement that any curved space has a flat space tangent to it at any point. (that any curved space shares a region-albeit vanishingly small, with a flat space- the one tangent to it at a point).
+- Straight lines in flat spacetime are the worldlines of free particles. The absence of first derivative terms mean that the metric doesn't change, the scalar product remain those of flat spacetime and so particles move in straight lines locally in this coordinate system. These coordinate systems are useful since in them the equations of physics will be nearly the same as those in flat spacetime.
+
+*Lengths And Volumes*
+- ![[Pasted image 20231129213313.png]]
+- ![[Pasted image 20231129213344.png]]
+- ![[Pasted image 20231129213400.png]]
+- 

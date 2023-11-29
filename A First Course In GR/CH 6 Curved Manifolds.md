@@ -21,3 +21,24 @@
 
 ### 6.2 Riemannian Manifolds
 
+- In our case the metric is essential since it will carry information about the rates at which clocks run and the distances between points, just as it does in SR.
+- A differentiable manifold on which a symmetric $\begin{pmatrix}0\\2\end{pmatrix}$ tensor-field **g** has been singled out to act as a metric at each point is called a Riemannian manifold.
+- By picking out a metric, we add structure to the manifold: the metric completely defines the curvature of a manifold. So, different metrics will lead to different curvatures.
+- The differentiable manifold itself is primitive: an amorphous (without a clearly defined shape or form) collection of points, arranged locally like the points of Euclidean space, but not having any distance or shape defined. Giving the metric **g** gives it a specific shape.
+- Note that it is possible to define the notion of curvature on a manifold without the metric-affine manifolds.
+
+*The Metric And Local Flatness*
+- Since the metric provides a mapping between vectors and forms, given a vector field at some point $\vec{V}(P)$, there is a unique one-form field $\tilde{V}(P)$.
+- In general, $g_{\alpha \beta}$ will be a complicated functions of position, so the relation between, say, $V^{0}$ and $V_{0}$ might not be simple in an arbitrary coordinate system.
+- Since we have to study general curved manifolds, and a general curved coordinate system might have any coordinate system, we allow for any coordinate system.
+- In SR we studies Lorenz frames because they were simple. With gravity, since they are not allowed, we have to allow all coordinates, and thus all coordinate transformations that are non singular.
+- The metric tensor is symmetric (by definition: inherits the symmetry of the scalar product). It is a theorem of matrix algebra that for a symmetric matrix, we can always find a transformation matrix such that the symmetric matrix becomes diagonal with +1,0, and -1 values only. The number of positive or negative values depend on the number of positive and negative eigenvalues. Since we choose there to be 1 negative eigenvalue and 3 positive eigenvalues, we have that, for some transformation matrix $\Lambda^{\alpha'}_{\beta}$, $$g_{\alpha' \beta'}=\begin{pmatrix}-1 &0&0&0\\0&1&0&0 \\ 0&0&1&0 \\ 0&0&0&1 \end{pmatrix}=\eta_{\alpha \beta}$$
+- $\eta_{\alpha \beta}$ will denote only this metric-the metric of SR.
+- This relied on choosing **g** to have the appropriate eigenvalues. The trace is called the signature of the metric, for SR and GR it is +2.
+- This metric of SR was obtained here by a transformation at a point, hence the physical argument that it is always possible to construct a local inertial frame finds its mathematical grounding here: at a point we can obtain $\eta_{\alpha \beta}$  This in turn implies that the metric has to have +2 signature if it is to describe spacetime with gravity, since only then can we obtain the metric for SR.
+- Moreover, the transformation matrix that produces this might not be a coordinate transformation...
+- Having found a basis at some point $P$ for which the metric is $\eta$ , it is possible to find coordinates such that, in the neighborhood of $P$, the metric is nearly $\eta$  This is embodied in the theorem that having chosen a point $P$ of the manifold, a coordinate system {$x^{\alpha}$} can be found whose origin is at $P$ and in which $g_{\alpha \beta}(x^{\mu})=\eta_{\alpha \beta}+0[(x^{\mu})^{2}]$
+- So the metric is nearly that of SR, the differences being second order in the coordinates. Such coordinate systems are referred to as local Lorentz frames.
+- The above theorem can be put another way:
+	- $g_{\alpha \beta}(P)=\eta_{\alpha \beta}$ for all $al$
+	- 

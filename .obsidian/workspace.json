@@ -11,8 +11,12 @@
             "id": "f1111f19bc148f89",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "A First Course In GR/CH5 Preface To Curvature.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "A First Course In GR/CH5 Preface To Curvature.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "A First Course In GR/CH5 Preface To Curvature.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "A First Course In GR/CH5 Preface To Curvature.md"
+              }
             }
           }
         ]
@@ -140,6 +148,10 @@
   },
   "active": "f1111f19bc148f89",
   "lastOpenFiles": [
+    "Pasted image 20231129113135.png",
+    "Pasted image 20231129113020.png",
+    "Pasted image 20231129112939.png",
+    "Pasted image 20231129112919.png",
     "A First Course In GR/CH5 Preface To Curvature.md",
     "A First Course In GR/Ch3 Tensor Analysis In Special Relativity.md",
     "A First Course In GR/CH4 Perfect Fluids In Special Relativity.md",
@@ -155,9 +167,6 @@
     "A First Course In GR/Pasted image 2023111![[Pasted image 20231118164050.png.md",
     "Pasted image 20231122211827.png",
     "Pasted image 20231122185132.png",
-    "Pasted image 20231122184549.png",
-    "Pasted image 20231120222434.png",
-    "Pasted image 20231118164124.png",
     "A First Course In GR"
   ]
 }

@@ -85,44 +85,47 @@
 -  A general vector $\vec{V}$ has components on the polar basis of $(V^{r},V^{\theta})$. Its derivative with respect to $r$ is then: $\frac{\partial \vec{V}}{\partial r}=\frac{\partial V^{\alpha}}{\partial r}\vec{e}_{\alpha}+V^{\alpha}\frac{\partial \vec{e}_{\alpha}}{\partial r}$. More generally, in any coordinate basis, we have $$\frac{\partial \vec{V}}{\partial x^\beta}=\frac{\partial V^{\alpha}}{\partial x^{\beta}}\vec{e}_{\alpha}+V^{\alpha}\frac{\partial \vec{e}_{\alpha}}{\partial x^{\beta}}$$
 *The Christoffel Symbols*
 - The term $\frac{\partial \vec{e}_{\alpha}}{\partial x^{\beta}}$ is just a limit of a difference of a vector, so is itself a vector and hence can be expressed as $\frac{\partial \vec{e}_{\alpha}}{\partial x^{\beta}}= \Gamma^{\mu}_{\alpha \beta}\vec{e}_\mu$ 
-- The Christoffel symbols are just the coefficient of the derivatives of basis vectors. To calculate them in polar coordinates, one can express the polar vector basis in terms of the cartesian basis, take derivatives with respect to polar coordinates, convert the result in terms of polar basis vectors. The cartesian basis is only used for the ease of taking derivatives (they are constant vectors). The coefficients one gets are then the Christoffel symbols.
+- The Christoffel symbols are just the coefficients of the derivatives of basis vectors. To calculate them in polar coordinates, one can express the polar vector basis in terms of the cartesian basis, take derivatives with respect to polar coordinates, and then convert back the result in terms of polar basis vectors. The cartesian basis is only used for the ease of taking derivatives (they are constant vectors). The coefficients one gets are then the Christoffel symbols.
 
 *The Covariant Derivative*
 - The derivative of a vector can now be written as $\frac{\partial \vec{V}}{\partial x^\beta}=\frac{\partial V^{\alpha}}{\partial x^{\beta}}\vec{e}_{\alpha}+V^{\alpha}\Gamma^{\mu}_{\alpha \beta}\vec{e}_\mu$ 
-- Relabeling the indices: $\frac{\partial \vec{V}}{\partial x^\beta}=(\frac{\partial V^{\alpha}}{\partial x^{\beta}}+V^{\mu}\Gamma^{\alpha}_{\mu \beta})\vec{e}_\alpha$     
+- Relabeling the indices and then taking common: $\frac{\partial \vec{V}}{\partial x^\beta}=(\frac{\partial V^{\alpha}}{\partial x^{\beta}}+V^{\mu}\Gamma^{\alpha}_{\mu \beta})\vec{e}_\alpha$     
 - Hence, the vector field $\frac{\partial \vec{V}}{\partial x^\beta}$ has components $V^{\alpha}_{;\beta}=V^{\alpha}_{,\beta}+V^{\mu}\Gamma^{\alpha}_{\mu \beta}$ 
+- Note that we interchange between considering $\vec{V}$ as a single vector and as a general vector in some vector field, in which case it could be any vector of some vector field, and so is a representation of that vector field. Then, any operations applied to it could be considered as applying those operations to all the vectors in that vector field which is equivalent to applying those operations to the vector field itself.
 - Hence, we have the derivative of a vector field $\vec{V}$: $$\frac{\partial \vec{V}}{\partial x^\beta}=V^{\alpha}_{;\beta}\vec{e}_{\alpha}$$
-- Here, for a fixed $\beta$, the derivative of a vector is just a vector. However, since $\beta$ can take on two values, for a fixed vector, we get four components, with two corresponding to each value $\beta$ can take.
-- Now, let us define a $\begin{pmatrix}1\\ 1\end{pmatrix}$ tensor $\nabla \vec{V}=V^{\alpha}_{;\beta}\vec{e}_{\alpha}\tilde{\omega}^{\beta}$ 
-- This has components $(\nabla \vec{V})^{\alpha}_{\beta}=V^{\alpha}_{;\beta}$ 
+- Since the operation of taking a derivative amounts a limit of a difference, the derivative of a vector gives another vector. This way, if we take derivatives of all vectors in a vector field- of a vector field, we get another vector field.
+- Here, for a fixed $\beta$, we get a vector field where each vector has two components. However, since $\beta$ can take on two values, for a fixed vector, we get four components, and from a single vector field, we get two vector fields (one where the vectors are lets say the x-derivatives and the other where they are the -y derivatives of the original vectors). Hence, for each vector, we get 4 components, with two corresponding to each value $\beta$ can take.
+- The above comments suggest that this situation is in line with where a tensor can be useful, so let us define a $\begin{pmatrix}1\\ 1\end{pmatrix}$ tensor $\nabla \vec{V}=V^{\alpha}_{;\beta}\vec{e}_{\alpha}\tilde{\omega}^{\beta}$ 
+- This has components $(\nabla \vec{V})^{\alpha}_{\beta}=V^{\alpha}_{;\beta}$  (For a 2D space, these are 4 components)
 - Upon contraction of $\nabla \vec{V}$ with a basis vector $\vec{e}_{\beta}$: $$\langle \nabla \vec{V}, \vec{e}_{\beta} \rangle= V^{\alpha}_{;\beta}\vec{e}_{\alpha} \langle \tilde{\omega}^{\beta}, \vec{e}_{\beta} \rangle=V^{\alpha}_{;\beta}\vec{e}_{\alpha}=\frac{\partial \vec{V}}{\partial x^\beta}$$
-- Hence, to specify the value of $\beta$, we need to contract it with $\vec{e}_{\beta}$ This is why for a fixed $\beta$ we get a single vector field, but for two values of $\beta$ we get a tensor field: one vector field corresponding to each $\beta$, to choose the value of $\beta$/vector field/components we want to pick, we have to feed in a vector, and then we get in the domain of that vector field.
-- Hence, the derivative of a vector can be thought of as contraction between a one higher rank tensor with a specific basis vector. The Covariant derivative is the higher rank tensor. 
-- The components of the covariant derivative $(\nabla \vec{V})^{\alpha}_{\beta}=V^{\alpha}_{;\beta}$ can be obtained in two ways. One is to calculate $V^{\alpha}_{;\beta}=V^{\alpha}_{,\beta}+V^{\mu}\Gamma^{\alpha}_{\mu \beta}$  in whatever coordinate system one is in by knowledge of the Christoffel symbols. The other is to make use of the fact that they are tensor components and so can be obtained by transformation: transform them from cartesian coordinates by use of transformation matrices.
+- Hence, to specify the value of $\beta$, we need to contract it with $\vec{e}_{\beta}$ This is why for a fixed $\beta$ we get a single vector field, but for two values of $\beta$ we get a tensor field: one vector field corresponding to each $\beta$, to choose the value of $\beta$/vector field/components we want to pick, we have to feed in a vector, and then we get in the domain of a single vector field out of the two.
+- Hence, the derivative of a vector can be thought of as a result of the contraction between a one higher rank tensor with a specific basis vector. The Covariant derivative is the higher rank tensor. 
+- The components of the covariant derivative $(\nabla \vec{V})^{\alpha}_{\beta}=V^{\alpha}_{;\beta}$ can be obtained in two ways. One is to calculate $V^{\alpha}_{;\beta}=V^{\alpha}_{,\beta}+V^{\mu}\Gamma^{\alpha}_{\mu \beta}$  in whatever coordinate system one is in by knowledge of the Christoffel symbols. The other is to make use of the fact that they are tensor components and so can be obtained by transformation: transform them from cartesian coordinates (where there form is simple because of the vanishing of the Christoffel symbols) by use of transformation matrices.
 
 *Divergence And Laplacian*
 - The divergence of a vector $\vec{V}$ is the scalar obtained by contracting $\nabla \vec{V}$ with basis one forms and basis vectors, that is, contracting $(\nabla \vec{V})^{\alpha}_{\beta}$ on its two indices: $(\nabla \vec{V})^{\alpha}_{\alpha}$ 
 - In Cartesian $(\nabla \vec{V})^{\alpha}_{\alpha}=V^{\alpha}_{,\alpha}$ 
 - More generally, $(\nabla \vec{V})^{\alpha}_{\alpha}=V^{\alpha}_{;\alpha}= V^{\alpha}_{,\alpha}+V^{\mu}\Gamma^{\alpha}_{\mu \alpha}$  
 - Notice the sum on Christoffel symbols.
-- Laplacian is the divergence of the gradient. So we have to convert the gradient one form to a vector gradient and take its divergence (simply input that vector into the formula obtained for the divergence of a general vector).
+- Notice that theres a contraction, so for a specific covariant derivative, we get the same value for the expression coordinated in any system, and so the simple expression in cartesian will be equivalent to the general expression. Obviously, this had to be the case since it denotes a geometrical quantity: divergence.
+- Laplacian is the divergence of the gradient. But there is no divergence of one-forms so we convert the gradient one form to a vector gradient and take its divergence (simply input that vector into the formula obtained for the divergence of a general vector).
 
 *Derivatives Of One-Forms And Tensors Of Higher Types*
 - Since a scalar field $\phi$ depends on no basis vectors, its derivative the gradient one form $\tilde{d}\phi$ is equivalent to its covariant derivative $\nabla \phi$.
 - For a fixed $\beta$, $\frac{\partial \tilde{p}}{\partial x^{\beta}}=\nabla_{\beta} \tilde{p}$ is a one-form, $\frac{\partial \vec{V}}{\partial x^{\beta}}=\nabla_{\beta}\vec{V}$ is a vector, and  $\langle \tilde{p},\vec{V}\rangle=\phi=p_{\alpha}V^{\alpha}$ is a scalar.
 - Taking derivative of the scalar: $\nabla_{\beta}\phi=\frac{\partial p_{\alpha}}{\partial x^{\beta}}V^{\alpha}+ p_{\alpha} \frac{\partial V^{\alpha}}{\partial x^{\beta}}$
 - After substituting and renaming indices: $\nabla_{\beta}\phi=(\frac{\partial p_{\alpha}}{\partial x^{\beta}} -p_{\mu}\Gamma^{\mu}_{\alpha \beta})V^{\alpha} +p_{\alpha}V^{\alpha}_{;\beta}$ 
-- Now, the term on the LSH is a one form, the term outside brackets on the RHS is a one form, solving for the one in the brackets suggests it should be a one form. Moreover, it is a 2 indexed term that is being contracted with a vector, giving out a one form. Also, it has the form of a covariant derivative.
-- Hence, we regard the term inside the brackets as the covariant derivative of a one form $\tilde{p}$ :
+- Now, the term on the LSH is a one form, the term outside brackets on the RHS is a one form, solving for the one in the brackets suggests it should be a one form. Moreover, it is a 2 indexed term that is being contracted with a vector, giving out a one form. Also, it has the form of a covariant derivative. Hence, we regard the term inside the brackets as the covariant derivative of a one form $\tilde{p}$ :
 - $\nabla \tilde{p}\rightarrow \nabla_{\beta}p_{\alpha}=\nabla p_{\alpha \beta}=p_{\alpha ; \beta}= p_{\alpha , \beta}-p_{\mu}\Gamma^{\mu}_{\alpha \beta}$ 
-- This is a $\begin{pmatrix}0\\ 2\end{pmatrix}$ tensor when $\beta$ value is not specified. It needs a vector input to turn into a one-form field/one-form and then another to pick a specific component of that field/one-form
+- This is a $\begin{pmatrix}0\\ 2\end{pmatrix}$ tensor when $\beta$ value is not specified. It needs a vector input to turn into a one-form field/one-form and then another vector to pick a specific component of that field/one-form
 - Thus, we have the covariant derivative of a scalar: $\nabla_{\beta}(p_{\alpha}V^{\alpha})=p_{\alpha ; \beta}V^{\alpha} + p_{\alpha}V^{\alpha}_{;\beta}$  
-- Thus, covariant differentiation obeys the same sort of product rule as ordinary differentiation: it must do this since in cartesian coordinates $\nabla$ is just partial differentiation of components which includes the product rule, so the above general form must reduce to it in the cartesian case. For that to be possible, there had to be a product rule.
-- The two formulae for the components of the covariant derivative of a vector and a one-form respectively are: $$V^{\alpha}_{;\beta}=V^{\alpha}_{,\beta}+V^{\mu}\Gamma^{\alpha}_{\mu \beta } $$$$p_{\alpha;\beta}=p_{\alpha,\beta}-p_{\mu}\Gamma^{\mu}_{\alpha \beta}$$
+- Thus, covariant differentiation obeys the same sort of product rule as ordinary differentiation: it must do this since in cartesian coordinates $\nabla$ is just partial differentiation of components which includes the product rule, so the above general form must reduce to it in the cartesian case. For that to be possible, there had to be a product rule (the reduction $V^{\alpha}_{;\beta}=V^{\alpha}_{,\beta}$ being already there).
+- The two formulae for the components of the covariant derivative of a vector and a one-form are, respectively: $$V^{\alpha}_{;\beta}=V^{\alpha}_{,\beta}+V^{\mu}\Gamma^{\alpha}_{\mu \beta } $$$$p_{\alpha;\beta}=p_{\alpha,\beta}-p_{\mu}\Gamma^{\mu}_{\alpha \beta}$$
 - The derivative index $\beta$ is the last one on $\Gamma$, the other indices are where they should be.
-- Since the only reason the covariant derivative was different than a normal derivative was the basis vectors, it should coincide with a normal partial derivatives on scalar and should satisfy the Leibniz rule:
+- Since the only reason the covariant derivative was different than a normal derivative was the basis vectors, it should coincide with a normal partial derivative on scalars and should satisfy the Leibniz rule:
 	- $∇_{μ}(X^{ν}X_{ν})=(∇_{μ}X^{ν})X_{ν}+X^{ν}(∇_{μ}X_{ν})=∂_{μ}(X^{ν}X_{ν})=(∂_{μ}X^{ν})X_{ν}+X^{ν}(∂_{μ}X_{ν})$  
 	- Now, since we knew the covariant derivative for a vector, the covariant derivative for a one-form followed.
+
 - For covariant derivatives of tensors of higher types: For every up index, add a Christoffel symbol contracted with the tensor on that index. For every down index, _subtract_ such a term instead.
 ![[Pasted image 20231126114516.png]]
 
@@ -130,11 +133,11 @@
 
 - In Cartesian coordinates, the components of a one-form and its associated vector are equal, and since the components of $\nabla$ are acquired just through partial differentiation of components (in Cartesian coordinates), it follows that the components of the covariant derivative of a one-form and a vector must be equal in cartesian coordinates.
 - Hence, the covariant derivatives themselves must only differ in the position of their indices (they would be tensors of different rank/ in different spaces), the metric tensor can be used to match the indices (connect the two via forming a map between the two spaces). 
-- Hence, if we have $\tilde{V}=$**g**$(\vec{V},\ )$, then $\nabla_{\beta}\tilde{V}=$**g**$(\nabla_{\beta}\vec{V},\ )$. However, this is a tensor equation- two tensors are equal to each other- they have the same components and are of the same type. So, even though this was derived from some specific frame, they are equal in that frame and transform in the same manner (because they are of the same type), this relation must be true in all frames: its a tensor equation without any reference to components.
+- Hence, in cartesian coordinates,  if we have $\tilde{V}=$**g**$(\vec{V},\ )$, then $\nabla_{\beta}\tilde{V}=$**g**$(\nabla_{\beta}\vec{V},\ )$. However, this is a tensor equation- two tensors are equal to each other- they have the same components and are of the same type, so they are equal in one frame and transform in the same way from that frame to any other one. So, even though this was derived from some specific frame, they are equal in that frame and transform in the same manner (because they are of the same type), this relation must be true in all frames: its a tensor equation without any reference to components.
 - Hence, $$V_{\alpha;\beta}=g_{\alpha \mu}V^{\mu}_{;\beta}$$
 - The above argument another way:
-	- Let the unprimed indices indicate cartesian coordinates and the primed one indicate a general coordinate system.
-	- The statement $V_{\alpha'}=g_{\alpha' \mu'}V^{\mu'}$ valid in all coordinate systems.
+	- Let the unprimed indices indicate cartesian coordinates and the primed ones indicate a general coordinate system.
+	- The statement $V_{\alpha'}=g_{\alpha' \mu'}V^{\mu'}$ we know to be valid in all coordinate systems.
 	- In Cartesian, $g_{\alpha \mu}=\delta_{\alpha \mu} \rightarrow V_{\alpha}=V^{\alpha}$ and the Christoffel symbols vanish so $V_{\alpha;\beta}=V_{\alpha,\beta}$ and $V^{\alpha}_{;\beta}=V^{\alpha}_{,\beta}$. So, $V_{\alpha, \beta}=V^{\alpha}_{,\beta}$. It follows that $V^{\alpha}_{;\beta}=V_{\alpha;\beta}$ 
 	- Hence, in Cartesian, $V^{\alpha}_{;\beta}=g_{\alpha \mu}V^{\mu}_{;\beta}$ and coupling this with $V^{\alpha}_{;\beta}=V_{\alpha;\beta}$ , we have $V_{\alpha;\beta}=g_{\alpha \mu}V^{\mu}_{;\beta}$ which is a tensor equation valid in all coordinate frames.
 
@@ -144,13 +147,13 @@
 	- It follows (from the map provided by the metric between the covariant derivative of a vector and a one-form) that $g_{\alpha' \mu';\beta'}=0$  in all coordinate systems.
 
 - In Cartesian, $g_{\alpha \mu;\beta}=g_{\alpha \mu;\beta}=g_{\alpha \mu,\beta}=\delta_{\alpha \mu, \beta}=0$
-- Null tensors are not transformed by transformation matrices but lets calculate the covariant derivative of the metric tensor explicitly in general coordinates:
+- Null tensors can not be transformed by transformation matrices but lets calculate the covariant derivative of the metric tensor explicitly in general coordinates:
 	- Applying the product rule and keeping in mind the - sign because of the lower indices:
-	- $(\nabla g)_{\alpha' \mu' \beta'}= g_{\alpha' \mu';\beta'}= g_{\alpha' \mu', \beta'} -g_{\alpha' \nu'}\Gamma^{\nu}_{\mu'\beta}-g_{\nu \mu'}\Gamma^{\nu}_{\mu' \beta'}$ 
+	- $(\nabla g)_{\alpha' \mu' \beta'}= g_{\alpha' \mu';\beta'}= g_{\alpha' \mu', \beta'} -g_{\alpha' \nu'}\Gamma^{\nu}_{\mu'\beta}-g_{\nu \mu'}\Gamma^{\nu}_{\mu' \beta'}=0$ 
 	- These must evaluate to 0 after all the sums have taken place in a specific coordinate system.
 
 *Calculating The Christoffel Symbols From The Metric*
-- From the vanishing of the covariant derivative of the metric, we can find equations for the Christoffel symbols in terms of $g_{\alpha \beta, \mu}$ and vice versa, giving as easy way to derive the Christoffel symbols.
+- From the vanishing of the covariant derivative of the metric, we can find equations for the Christoffel symbols in terms of $g_{\alpha \beta, \mu}$ and vice versa, giving an easy way to derive the Christoffel symbols.
 - First, we prove that the Christoffel symbols are symmetric in their two lower indices $T^{\mu}_{\alpha \beta}=T^{\mu}_{\beta \alpha}$:
 	- Consider a scalar field $\phi$. Its first derivative $\nabla \phi$ is a one-form with components $\phi_{,\beta}$
 	- Its second covariant derivative $\nabla \nabla \phi$ is a $\begin{pmatrix}0\\ 2\end{pmatrix}$ tensor with components $\phi_{,\beta;\alpha}$ 
@@ -162,4 +165,18 @@
 	- Therefore, we have, $\phi_{,\alpha;\beta}=\phi_{,\beta;\alpha}$  in all bases.
 	- These are covariant derivatives of one-forms, so $\phi_{,\alpha,\beta}-\phi_{,\mu}\Gamma^{\mu}_{\alpha \beta}=\phi_{,\beta,\alpha}-\phi_{,\mu}\Gamma^{\mu}_{\beta \alpha}$  
 	- Here, the two one-forms will cancel out, leaving the symmetry of the Christoffel symbols $$T^{\mu}_{\alpha \beta}=T^{\mu}_{\beta \alpha}$$
+- Now, writing different permutations of the RHS of the equation $(\nabla g)_{\alpha' \mu' \beta'}= g_{\alpha' \mu';\beta'}= g_{\alpha' \mu', \beta'} -g_{\alpha' \nu'}\Gamma^{\nu}_{\mu'\beta}-g_{\nu \mu'}\Gamma^{\nu}_{\mu' \beta'}=0$ and adding them all up using symmetry of both the metric tensor and the Christoffel symbols: ![[Pasted image 20231129112919.png]]
+- ![[Pasted image 20231129112939.png]]
+- The first two terms on the RHS vanish to give ![[Pasted image 20231129113020.png]]
+- Upon contraction with the inverse metric, we get the expression for Christoffel symbols in terms of the metric and its derivatives: ![[Pasted image 20231129113135.png]]
+
+### 5.5 The Tensorial Nature Of The Christoffel Symbols
+
+- Since $\vec{e}_{\alpha}$ is a vector, $\nabla \vec{e}_{\alpha}$ is a 1-1 tensor whose components are $\Gamma^{\mu}_{\alpha \beta}$ However, notice that here $\alpha$ is just a label to denote which tensor it is: $\alpha$ changes the tensor, while $\mu$ or $\beta$ changes only the component of a given tensor. There is one such tensor for each of the basis vectors.
+- However, since some other frame will have a different set of basis vectors, that arent just transformed from some other set but are wholly different vectors and geometrical entities, we get that $\nabla \vec{e}_{\alpha'}$  The note on notation here is that the primed indices dont denote transformed basis vectors but a different set of basis vectors.
+- Hence, $\nabla \vec{e}_{\alpha}$ and $\nabla \vec{e}_{\alpha'}$ are two different tensors and not just transformations of each other. This follows for their respective components as well, which are the Christoffel symbols. Hence, the Christoffel symbols of one frame cannot be obtained by a simple tensorial transformation, for the simple reason that they dont originate from the same set of geometrical quantities- basis vectors of different frames are different vectors, not just transformations of each other. Take Cartesian coordinates for example, where the Christoffel symbols are none. Those in polar coordinates are not null, and not null vectors cannot be obtained from null vectors via transformation, which points to the fact they are different entities.
+- However, if we keep the $\alpha$ label, we do get that the $\mu$,$\beta$ components of the Christoffel symbols are components of one single tensor. However, there is no single tensor whose components are the whole of $T^{\mu}_{\alpha \beta}$ with $\alpha$ allowed to vary. The combination $V^{\beta}_{,\alpha} +\Gamma^{\beta}_{\mu \alpha}V^{\mu}$ are the components of one single tensor.
+
+### 5.6 Noncoordinate Bases
+
 - 

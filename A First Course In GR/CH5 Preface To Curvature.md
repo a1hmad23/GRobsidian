@@ -86,7 +86,7 @@
 *The Christoffel Symbols*
 - The term $\frac{\partial \vec{e}_{\alpha}}{\partial x^{\beta}}$ is just a limit of a difference of a vector, so is itself a vector and hence can be expressed as $\frac{\partial \vec{e}_{\alpha}}{\partial x^{\beta}}= \Gamma^{\mu}_{\alpha \beta}\vec{e}_\mu$ 
 - The Christoffel symbols are just the coefficients of the derivatives of basis vectors. To calculate them in polar coordinates, one can express the polar vector basis in terms of the cartesian basis, take derivatives with respect to polar coordinates, and then convert back the result in terms of polar basis vectors. The cartesian basis is only used for the ease of taking derivatives (they are constant vectors). The coefficients one gets are then the Christoffel symbols.
-
+$vec$
 *The Covariant Derivative*
 - The derivative of a vector can now be written as $\frac{\partial \vec{V}}{\partial x^\beta}=\frac{\partial V^{\alpha}}{\partial x^{\beta}}\vec{e}_{\alpha}+V^{\alpha}\Gamma^{\mu}_{\alpha \beta}\vec{e}_\mu$ 
 - Relabeling the indices and then taking common: $\frac{\partial \vec{V}}{\partial x^\beta}=(\frac{\partial V^{\alpha}}{\partial x^{\beta}}+V^{\mu}\Gamma^{\alpha}_{\mu \beta})\vec{e}_\alpha$     

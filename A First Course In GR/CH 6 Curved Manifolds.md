@@ -14,7 +14,7 @@
 - We consider differentiable manifolds. These spaces are everywhere continuous and differentiable. 
 - Roughly, this means that one can define a scalar field $\phi$ at each point of the manifold and be sure that it can be differentiated everywhere.
 - This ensures that we can define one-forms and vectors everywhere: in a certain coordinate system on the manifold, the members of the set {$\phi_{,\alpha}$} are the components of the one form $\tilde{d}\phi$ and any set {$a \tilde{d}\phi +b \tilde{d}\psi$} is a one-form field. And that every curve with some parameter $\lambda$ has a tangent vector $\vec{V}$ defined as a function that takes the one form $\tilde{d}\phi$ into the derivative of $\phi$ along the curve, $\frac{d \phi}{d \lambda}$: (linear combinations are again vectors) $$\langle \tilde{d}\phi,\vec{V}\rangle =\vec{V}(\tilde{d}\phi)=\nabla_{V}\phi=\frac{d \phi}{d \lambda}$$
-- Using one forms and vectors, we can defines a whole set of tensors of any rank. Without the metric though, there is yet no correspondence. All of this comes from differentiability, so the set of all tensors are said to be part of the differential structure of the manifold.
+- Using one forms and vectors, we can define a whole set of tensors of any rank. Without the metric though, there is yet no correspondence. All of this comes from differentiability, so the set of all tensors are said to be part of the differential structure of the manifold.
 
 *Review*
 ![[Pasted image 20231129181501.png]]
@@ -30,8 +30,8 @@
 *The Metric And Local Flatness*
 - Since the metric provides a mapping between vectors and forms, given a vector field at some point $\vec{V}(P)$, there is a unique one-form field $\tilde{V}(P)$.
 - In general, $g_{\alpha \beta}$ will be a complicated functions of position, so the relation between, say, $V^{0}$ and $V_{0}$ might not be simple in an arbitrary coordinate system.
-- Since we have to study general curved manifolds, and a general curved coordinate system might have any coordinate system, we allow for any coordinate system.
-- In SR we studies Lorenz frames because they were simple. With gravity, since they are not allowed, we have to allow all coordinates, and thus all coordinate transformations that are non singular.
+- Since we have to study general curved manifolds, and a general curved manifold might have any coordinate system, we allow for any coordinate system.
+- In SR we study Lorenz frames because they were simple. With gravity, since they are not allowed, we have to allow all coordinates, and thus all coordinate transformations that are non singular.
 - The metric tensor is symmetric (by definition: inherits the symmetry of the scalar product). It is a theorem of matrix algebra that for a symmetric matrix, we can always find a transformation matrix such that the symmetric matrix becomes diagonal with +1,0, and -1 values only. The number of positive or negative values depend on the number of positive and negative eigenvalues. Since we choose there to be 1 negative eigenvalue and 3 positive eigenvalues, we have that, for some transformation matrix $\Lambda^{\alpha'}_{\beta}$, $$g_{\alpha' \beta'}=\begin{pmatrix}-1 &0&0&0\\0&1&0&0 \\ 0&0&1&0 \\ 0&0&0&1 \end{pmatrix}=\eta_{\alpha \beta}$$
 - $\eta_{\alpha \beta}$ will denote only this metric-the metric of SR.
 - This relied on choosing **g** to have the appropriate eigenvalues. The trace is called the signature of the metric, for SR and GR it is +2.

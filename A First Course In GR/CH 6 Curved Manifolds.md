@@ -51,4 +51,24 @@
 - ![[Pasted image 20231129213313.png]]
 - ![[Pasted image 20231129213344.png]]
 - ![[Pasted image 20231129213400.png]]
-- 
+- Volume is four dimensional: $dx^{0}dx^{1}dx^{2}dx^{3}$, where {$x^{\alpha}$} are the coordinates that give the nearly Lorenzian metric that was discussed above. From calculus of variations, in any other coordinate system {$x^{\alpha'}$}, we have  ![[Pasted image 20231130182940.png]]
+- Where the $\partial$ denotes the Jacobian of the transformation: $\Lambda^{\alpha}_{\beta'}$ 
+- In matrix terminology, the transformation of the metric components can be written as: $(g)=\Lambda \eta \Lambda^{T}$. The same relation follows for determinants, and using the fact that transposition does not change the determinant, along with the fact that $det(\eta)=-1$, we have that: $$det(g_{\alpha \beta})=g=-[det(\Lambda)]^{2}$$
+- Hence, $det(\Lambda^{\alpha}_{\beta'})=(-g)^{\frac{1}{2}}$ 
+- Therefore, $d^{4}x=(-g)^{\frac{1}{2}}d^{4}x'$ 
+- The above argument stemmed from the fact that at a point spacetime is same as Minkowski spacetime, and so the volumes must be the same (In flat space the volume is just $d^{4}x$). This was possible by choosing the special coordinates at the point, the coordinates whose origin is at that point and so where the metric can be written as the Minkowski metric plus second order perturbations. Then, by using the general result from calculus of variations, we found an expression for the volume at any point in arbitrary coordinates, which depends on the determinant of the metric.
+- The metric of course comes into it since it measures length. The result is that the square-root of the negative of the determinant of the metric is the thing to multiply by $d^{4}x'$ to get the true volume element at any point in any coordinate system.
+- As an example, consider the spherical coordinate system for 3D space. From the line element one can deduce the metric, and then find its determinant. Multiply that by $d^{4}x$ for spherical coordinates and get the familiar result for the volume element in spherical coordinates.
+
+*Proof Of The Local Flatness Theorem*
+
+### 6.3 Covariant Differentiation
+
+- By definition, differentiation is done through considering vectors at two distinct points (albeit they are infinitesimally close together). This notion might not be clear in a curved manifold, since the space might be curves between the two vectors and so the idea of the vectors pointing in the same direction is fuzzy. However, the local flatness of the Riemannian manifold helps us out. In the limit that is considered in the derivative of the vectors being close together, the space can be considered flat, and so vectors can point in the same direction, with their components being constant in this coordinate system, have there derivatives 0. That is, the derivatives of the basis vectors of the locally inertial coordinate system are 0 at $P$.
+- This is a definition of the covariant derivative. Its justification lies in the physical fact in a locally inertial frame everything is like in SR, and in SR the derivatives of basis vectors are 0.
+- Hence, the Christoffel symbols vanish, and the covariant derivatives has components equal to the partial derivative of the components: $V^{\alpha}_{;\beta}=V^{\alpha}_{,\beta}$ at $P$ in this frame.
+- This is also true for the metric: $g_{\alpha \beta;\gamma}=g_{\alpha \beta,\gamma}=0$  at $P$. This is the equality in the local flatness theorem. Now, this is a tensor equation, and so must be true generally for any coordinates.
+- Hence, if we have the symmetry of the Christoffel symbols, this will lead to the equation giving the Christoffel symbols in terms of the metric and its derivatives.
+- Note that the derivative of the Christoffel symbols would depend on the second derivative of the metric, which means the derivatives of the Christoffel symbols are non zero. This implies that although we can find a coordinate system where the Christoffel symbols vanish at some point $P$, these symbols do not vanish everywhere in that coordinate system.
+- This differs from flat space where such a coordinate system does exist. Hence, the difference between flat space and a curved manifold manifests itself in the Christoffel symbols.
+- The equation for the Christoffel symbols in terms of the metric means that given the metric, one can calculate all covariant derivatives, since they depend only on the Christoffel symbols.

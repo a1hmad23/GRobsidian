@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "A First Course In GR/CH 6 Curved Manifolds.md",
+                "file": "A First Course In GR/Ch2 Vector Analysis In Special Relativity.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "01ece9801131f2a3",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "A First Course In GR/CH 6 Curved Manifolds.md",
+                "file": "A First Course In GR/Ch2 Vector Analysis In Special Relativity.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "A First Course In GR/CH 6 Curved Manifolds.md",
+                "file": "A First Course In GR/Ch2 Vector Analysis In Special Relativity.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "A First Course In GR/CH 6 Curved Manifolds.md"
+                "file": "A First Course In GR/Ch2 Vector Analysis In Special Relativity.md"
               }
             }
           }
@@ -149,6 +148,7 @@
   },
   "active": "f1111f19bc148f89",
   "lastOpenFiles": [
+    "A First Course In GR/CH 6 Curved Manifolds.md",
     "Pasted image 20231130182940.png",
     "Pasted image 20231129213400.png",
     "Pasted image 20231129213344.png",
@@ -156,7 +156,6 @@
     "A First Course In GR/CH5 Preface To Curvature.md",
     "A First Course In GR/Ch3 Tensor Analysis In Special Relativity.md",
     "A First Course In GR/Ch2 Vector Analysis In Special Relativity.md",
-    "A First Course In GR/CH 6 Curved Manifolds.md",
     "Pasted image 20231129181501.png",
     "Pasted image 20231129113135.png",
     "Pasted image 20231129113020.png",
@@ -166,7 +165,6 @@
     "Pasted image 20231126114516.png",
     "A First Course In GR/Ch1 Special Relativity.md",
     "A First Course In GR/Images.md",
-    "Screenshot (16).png",
     "Untitled.md",
     "A First Course In GR/Pasted image 2023111![[Pasted image 20231118164050.png.md",
     "A First Course In GR"

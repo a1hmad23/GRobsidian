@@ -29,7 +29,7 @@
 
 *The Metric And Local Flatness*
 - Since the metric provides a mapping between vectors and forms, given a vector field at some point $\vec{V}(P)$, there is a unique one-form field $\tilde{V}(P)$.
-- In general, $g_{\alpha \beta}$ will be a complicated functions of position, so the relation between, say, $V^{0}$ and $V_{0}$ might not be simple in an arbitrary coordinate system.
+- In general, $g_{\alpha \beta}$ will be complicated functions of position, so the relation between, say, $V^{0}$ and $V_{0}$ might not be simple in an arbitrary coordinate system.
 - Since we have to study general curved manifolds, and a general curved manifold might have any coordinate system, we allow for any coordinate system.
 - In SR we study Lorenz frames because they were simple. With gravity, since they are not allowed, we have to allow all coordinates, and thus all coordinate transformations that are non singular.
 - The metric tensor is symmetric (by definition: inherits the symmetry of the scalar product). It is a theorem of matrix algebra that for a symmetric matrix, we can always find a transformation matrix such that the symmetric matrix becomes diagonal with +1,0, and -1 values only. The number of positive or negative values depend on the number of positive and negative eigenvalues. Since we choose there to be 1 negative eigenvalue and 3 positive eigenvalues, we have that, for some transformation matrix $\Lambda^{\alpha'}_{\beta}$, $$g_{\alpha' \beta'}=\begin{pmatrix}-1 &0&0&0\\0&1&0&0 \\ 0&0&1&0 \\ 0&0&0&1 \end{pmatrix}=\eta_{\alpha \beta}$$
@@ -75,4 +75,22 @@
 
 *Divergence Formula*
 
+### 6.4 Parallel-Transport, Geodesics, and Curvature
+
+- Until now, we have used the local flatness theorem to develop as much mathematics as possible without considering curvature explicitly.
+- There are 2 kinds of curvature: Intrinsic and extrinsic.
+- Extrinsic curvature:
+	- For a cylinder, it would be be the curvature it has in relation to the flat three dimensional space it is a part of.
+	- Extrinsic curvature comes from considering a manifold as embedded in a space of higher dimensions.
+	- Can be investigated by asking about lines that stay in the surface compared to straight lines that go off it.
+- Intrinsic Curvature:
+	- A cylinder can be made rolling a piece of paper, so intrinsically its geometry is flat.
+	- Distance between points on the original paper remain the same on the cylinder.
+	- Parallel straight lines remain so, so Euclid's parallelism axioms holds. In fact, all of Euclid's axioms hold for the surface of a cylinder.
+	- A two dimensional ant would decide it was flat, only its global topology is funny, in that going in a straight line brings him back to where he was.
+
+- Since we can only penetrate spacetime intrinsically- we cannot view it as embedded in higher dimensional space- all the worldlines stay in spacetime, we only talk about intrinsic curvature of spacetime.
+- A Sphere has an intrinsically curved surface:
+	- Lines that start parallel do not remain so, in fact they intersect. These are the great circles of a sphere, whose segments are the shortest routes between two points, as it is these only that stick to the surface- they only obey the curvature of the sphere and not add any of their own, they do not stray from their path.
+	- 
 

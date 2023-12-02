@@ -92,5 +92,22 @@
 - Since we can only penetrate spacetime intrinsically- we cannot view it as embedded in higher dimensional space- all the worldlines stay in spacetime, we only talk about intrinsic curvature of spacetime.
 - A Sphere has an intrinsically curved surface:
 	- Lines that start parallel do not remain so, in fact they intersect. These are the great circles of a sphere, whose segments are the shortest routes between two points, as it is these only that stick to the surface- they only obey the curvature of the sphere and not add any of their own, they do not stray from their path.
-	- 
+	- In parallel transport on a sphere, the reason for not staying parallel is because you still have to obey the curvature of the sphere: you have to parallel transport as a 2D being walking on the sphere. With each new parallel vector added, the intrinsic curvature of the sphere somewhat modifies the vector.
+	- Upon returning, the vector are found to have not stayed parallel. Since this does not happen in a flat space, this must be an effect due to the curvature of the sphere.
+	- If you imagine a small circle, each parallel straight line must end at the north pole when extended, hence they curve to the direction of the north pole.
+
+- The result of parallel transport between vectors depends on the path taken. Therefore, we cannot assert that two vectors are the same or parallel. Hence, on a curved manifold, it isn't possible to define globally parallel vector fields. Local parallelism can still be defined, a vector can be kept parallel and of the same length from one point to the next.
+
+*Parallel Transport*
+- Suppose a vector field $\vec{V}$ is defined on the sphere, and we examine how it changes along a curve. If the vectors at infinitesimally close points of the curve are parallel and of equal length, then the vector is said to be parallel-transported along the curve.
+- If $\vec{U}=\frac{d \vec{x}}{d \lambda}$ is the tangent to he curve (not necessarily normalized), then in a locally inertial coordinate system at $P$, the components of $\vec{V}$ must be constant along the curve at $P$: (since the vectors dont change when the are infinitesimally close to each other and they are on the curve) $\frac{dV^{\alpha}}{d \lambda}=0$ at $P$
+- Now, each of the components defines a scalar field on the curve, and we know that the derivative of a scalar field along a curve can be written in terms of the scalar product between the derivatives of the scalar field (with the coordinates) and the (vectors tangent to it: usually the 4-velocity), or $\frac{dV^{\alpha}}{d \lambda}= \frac{dx^{\beta}}{d \lambda} \frac{\partial V^{\alpha}}{\partial x^{\beta}}= U^{\beta} V^{\alpha}_{,\beta}=U^{\beta} V^{\alpha}_{;\beta}=0$   at $P$, where the 2nd last equality follows from using the locally flat coordinate system, where the Christoffel symbols are 0.
+- The last equality is a tensor equation, the LHS has a permissible tensor operation: contraction between tensor components, those of the covariant derivative and a 4-vector.
+- Hence, we have a frame invariant definition of the parallel transport of $\vec{V}$ along $\vec{U}$ (how $\vec{V}$ changes as it is transported along the curve, imagine they are sufficiently close enough so that they are in the local Lorenz frame, ): $$U^{\beta} V^{\alpha}_{;\beta}=0 \iff \frac{d}{d\lambda}\vec{V}=0=\nabla_\vec{U}$$
+*Geodesics*
+- By a straight line, Euclid means to keep on going in the direction it has been going. More precisely, the tangent to the curve at point is parallel to the tangent to the curve at the next point.
+- In Euclidean space, a straight line is the only curve that parallel transports its own tangent vector. In a curved space, we can draw lines that are as straight as possible by demanding parallel transport of the tangent vector. By demanding that the tangent vector doesn't change, we enforce that the curve doesn't stray more than is necessary- that is to only stray to account for the curvature of the manifold. These are called geodesics: $$\vec{U}\ is\ tangent\ to \ a\ geodesis \iff \nabla_\vec{U}\vec{U}=0$$
+- In a locally inertial coordinate system, these are straight lines.
+- In component notation: $$U^{\beta}U^{\alpha}_{;\beta}=U^{\beta}U^{\alpha}_{,\beta} + \Gamma^{\alpha}_{\mu \beta}U^{\mu}=0$$
+- 
 

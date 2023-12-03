@@ -92,21 +92,27 @@
 - Since we can only penetrate spacetime intrinsically- we cannot view it as embedded in higher dimensional space- all the worldlines stay in spacetime, we only talk about intrinsic curvature of spacetime.
 - A Sphere has an intrinsically curved surface:
 	- Lines that start parallel do not remain so, in fact they intersect. These are the great circles of a sphere, whose segments are the shortest routes between two points, as it is these only that stick to the surface- they only obey the curvature of the sphere and not add any of their own, they do not stray from their path.
-	- In parallel transport on a sphere, the reason for not staying parallel is because you still have to obey the curvature of the sphere: you have to parallel transport as a 2D being walking on the sphere. With each new parallel vector added, the intrinsic curvature of the sphere somewhat modifies the vector.
-	- Upon returning, the vector are found to have not stayed parallel. Since this does not happen in a flat space, this must be an effect due to the curvature of the sphere.
-	- If you imagine a small circle, each parallel straight line must end at the north pole when extended, hence they curve to the direction of the north pole.
+	- In parallel transport on a sphere, the reason for not staying parallel is because you still have to obey the curvature of the sphere: you have to parallel transport as a 2D being walking on the sphere, and so your vectors must stay tangent to the surface, which is the cause of rotation. With each new parallel vector added, the intrinsic curvature of the sphere somewhat modifies the vector.
+	- Upon returning, the vector is found to have not stayed parallel. Since this does not happen in a flat space, this must be an effect due to the curvature of the sphere.
+	- If you imagine a small circle, each parallel straight line emanating from it (perpendicular to it) must end at the north pole when extended, hence they curve to the direction of the north pole.
 
 - The result of parallel transport between vectors depends on the path taken. Therefore, we cannot assert that two vectors are the same or parallel. Hence, on a curved manifold, it isn't possible to define globally parallel vector fields. Local parallelism can still be defined, a vector can be kept parallel and of the same length from one point to the next.
 
 *Parallel Transport*
 - Suppose a vector field $\vec{V}$ is defined on the sphere, and we examine how it changes along a curve. If the vectors at infinitesimally close points of the curve are parallel and of equal length, then the vector is said to be parallel-transported along the curve.
-- If $\vec{U}=\frac{d \vec{x}}{d \lambda}$ is the tangent to the curve (not necessarily normalized), then in a locally inertial coordinate system at $P$, the components of $\vec{V}$ must be constant along the curve at $P$: (since the vectors dont change when the are infinitesimally close to each other and they are on the curve) $\frac{dV^{\alpha}}{d \lambda}=0$ at $P$
+- If $\vec{U}=\frac{d \vec{x}}{d \lambda}$ is the tangent to the curve (not necessarily normalized), then in a locally inertial coordinate system at $P$, the components of $\vec{V}$ must be constant along the curve at $P$: (since in parallel transport vectors remain as parallel as they could, only obeying the curvature of the manifold. In a flat space, since their is no intrinsic curvature, they can remain completely parallel. the two vectors whose difference is considered in the derivative are infinitesimally close together, and so both are part of the same Local Lorenz Frame where the basis vectors are constant.)
+- Hence,  $\frac{dV^{\alpha}}{d \lambda}=0$ at $P$
 - Now, each of the components defines a scalar field on the curve, and we know that the derivative of a scalar field along a curve can be written in terms of the scalar product between the derivatives of the scalar field (with the coordinates) and the (vectors tangent to it: usually the 4-velocity), or $\frac{dV^{\alpha}}{d \lambda}= \frac{dx^{\beta}}{d \lambda} \frac{\partial V^{\alpha}}{\partial x^{\beta}}= U^{\beta} V^{\alpha}_{,\beta}=U^{\beta} V^{\alpha}_{;\beta}=0$   at $P$, where the 2nd last equality follows from using the locally flat coordinate system, where the Christoffel symbols are 0.
+- So we have that the derivative of a vector's components along some curve at a point P on the curve in a curved manifold is equal to 0, in the LLF. The LLF is flat, so we have that the covariant derivative of a vector in the LLF at a point P on some curve, and along that curve, is 0 on a curved manifold.
 - The last equality is a tensor equation, the LHS has a permissible tensor operation: contraction between tensor components, those of the covariant derivative and a 4-vector.
-- Hence, we have a frame invariant definition of the parallel transport of $\vec{V}$ along $\vec{U}$ (how $\vec{V}$ changes as it is transported along the curve, imagine they are sufficiently close enough so that they are in the local Lorenz frame, so that the first derivative of the metric is 0 and the Christoffel symbols vanish and the covariant derivative reduce to the normal derivative, and so the derivative of the components are 0 and so the components are help constant as the vector is slides from one point to another (transported)): $$U^{\beta} V^{\alpha}_{;\beta}=0 \iff \frac{d}{d\lambda}\vec{V}=0=\nabla_\vec{U}$$
+- This process of calculating the derivative incorporated keeping the vector as parallel as possible from one point to the next, which is just parallel transport. When the transport is infinitesimal, we stay in a single LLF and the covariant derivative turns out to be 0.
+- Hence, we have a frame invariant definition of the parallel transport of $\vec{V}$ along $\vec{U}$ : $$U^{\beta} V^{\alpha}_{;\beta}=0 \iff \frac{d}{d\lambda}\vec{V}=0=\nabla_\vec{U}$$
+- That is, by parallel transporting a vector along a curve, and calculating the derivative by using the original and the transported vector, we get the covariant derivative to be 0, which is the derivative of that vector along a curve evaluated by parallel transporting it.
+
 *Geodesics*
-- By a straight line, Euclid means to keep on going in the direction it has been going. More precisely, the tangent to the curve at a point is parallel to the tangent to the curve at the next point.
-- In Euclidean space, a straight line is the only curve that parallel transports its own tangent vector. In a curved space, we can draw lines that are as straight as possible by demanding parallel transport of the tangent vector. By demanding that the tangent vector doesn't change, we enforce that the curve doesn't stray more than is necessary- that is to only stray to account for the curvature of the manifold.( moving straight in a curved spacetime means to take the tangent to a worldline-the 4 velocity, and move it parallel to itself ) These are called geodesics: $$\vec{U}\ is\ tangent\ to \ a\ geodesis \iff \nabla_\vec{U}\vec{U}=0$$
+- By a straight line, Euclid means to keep on going in the direction it has been going. More precisely, the tangent to the curve at a point is parallel to the tangent to the curve at the next point, meaning that straight lines parallel transport their own tangent vectors.
+- In Euclidean space, a straight line is the only curve that parallel transports its own tangent vector. In a curved space, we can draw lines that are as straight as possible by demanding parallel transport of the tangent vector. By demanding that the tangent vector doesn't change (stays tangent to the surface and nothing else), we enforce that the curve doesn't stray more than is necessary- that is to only stray to account for the curvature of the manifold.( moving straight in a curved spacetime means to take the tangent to a worldline-the 4 velocity, and move it parallel to itself ) These are called geodesics: $$\vec{U}\ is\ tangent\ to \ a\ geodesis \iff \nabla_\vec{U}\vec{U}=0$$
+- Since by parallel transport, the covariant derivative in the LLF is zero and hence the covariant derivative is 0 in any frame. However, the Christoffel symbols don't have to be 0 everywhere since they are not tensors.
 - In a locally inertial coordinate system, these are straight lines.
 - In component notation: $$U^{\beta}U^{\alpha}_{;\beta}=U^{\beta}U^{\alpha}_{,\beta} + \Gamma^{\alpha}_{\mu \beta}U^{\mu}U^{\beta}=0$$Here, $U^{\alpha}=\frac{dx^{\alpha}}{d \lambda}$ so $U^{\alpha} \frac{\partial}{\partial x^{\beta}}= \frac{d}{d \lambda }$ and we get
 - ![[Pasted image 20231203004702.png]]
@@ -115,4 +121,17 @@
 
 ### 6.5 The Curvature Tensor
 
+- Mathematical description of intrinsic curvature of a manifold. We derive our definition of curvature from the parallel transport of a vector on a closed loop.
+- Let there be a small closed loop in our manifold, whose four sides are the coordinate lines 
+- ![[Pasted image 20231203132757.png]]
 
+- Define a vector $\vec{V}$ at A and let it be parallel transported along the coordinate $x^1$ with the (coordinate) basis vector $\vec{e}_{1}$. The parallel transport of any vector is done in such a way that the covariant derivative of that vector on that curve is 0, so we have: $\nabla_{\vec{e}_{1}}\vec{V}=0$. Choosing a coordinate system, the one given in the picture, we can write the above equation in components: $\frac{\partial V^{\alpha}}{\partial x^{1}}=-\Gamma^{\alpha}_{\mu 1}V^{\mu}$    (for derivatives with respect to the other coordinates, both the terms are 0, since the vector is parallel transported along only one of the coordinates).
+- Integrating this from $A$ to $B$ gives the parallel transported vector at $B$:  $V^{\alpha}(B)=V^{\alpha}(A) - \int_{x^{2}=b} \Gamma^{\alpha}_{\mu 1}V^{\mu} dx^{1}$ 
+- Hence, the change in the initial vector is just $V^{\alpha}(B) - V^{\alpha}(A)=- \int_{x^{2}=b} \Gamma^{\alpha}_{\mu 1}V^{\mu} dx^{1}$
+- Similar expressions are found by transport on the other paths: (with sign flip to keep the same limit on the opposite path)
+- ![[Pasted image 20231203134212.png]]
+- The final vector we get by transporting along the full closed loop is: ![[Pasted image 20231203134355.png]]
+- Notice that to evaluate integral, we need to make use of coordinates, and so we talk about components,
+- The sum of these 4 integrals gives the change in the initial vector when parallel-transported through the full loop:
+- ![[Pasted image 20231203135032.png]]
+- 

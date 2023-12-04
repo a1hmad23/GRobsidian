@@ -132,6 +132,6 @@
 - ![[Pasted image 20231203134212.png]]
 - The final vector we get by transporting along the full closed loop is: ![[Pasted image 20231203134355.png]]
 - Notice that to evaluate integral, we need to make use of coordinates, and so we talk about components,
-- The sum of these 4 integrals gives the change in the initial vector when parallel-transported through the full loop:
+- The sum of these 4 integrals gives the change in the initial vector components when parallel-transported through the full loop:
 - ![[Pasted image 20231203135032.png]]
 - 

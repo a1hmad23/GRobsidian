@@ -1,7 +1,7 @@
 ### 5.1 On The Relation Of Gravitation To Curvature
 
 - SR does not include forces.
-- The postulates of SR lead existence of inertial frames that fill all of spacetime: all of spacetime can be described by a single frame, all of whose coordinates are at rest with respect to the origin, and all of whose clocks run at the same rate. [see section 1.2]
+- The postulates of SR lead to existence of inertial frames that fill all of spacetime: all of spacetime can be described by a single frame, all of whose coordinates are at rest with respect to the origin, and all of whose clocks run at the same rate. [see section 1.2]
 - The fundamental postulates lead to the idea of the interval $\Delta s$, which gives an invariant geometrical meaning to certain physical statements:
 	- When $\Delta s >0$, the interval is timelike. In that case $v<c$, (divide the interval by $t$), so since the interval is invariant, it can be considered to be that of a travelling particle. Moreover, let $\Delta s=k$ for any positive number $k$. Then, a rest frame can found such that $\Delta t=k$. In this case, the events are only separated temporally, so the interval corresponds to a reading of a clock in the rest frame between the two events. Notice that this argument holds because in the interval, the temporal term is positive.
 	- When $\Delta s<0$, the interval is spacelike. Analogous to the above argument, $\Delta r=-k$ can be found in which case $\Delta t=0$ and the events in that frame are simultaneous. Hence, the interval can be considered to be the (Euclidean) length of a rod.
@@ -49,13 +49,13 @@
 - Vectors are geometrical objects whose components transform in the same manner as the displacement. Hence, displacement is defined to be a vector and anything that transforms in the same manner as it does is a vector.
 - Thus, we can write down a transformation matrix (Jacobian) for vector components:
 - The modern way is to associate with the gradient of a scalar function a geometrical object called the One-Form $\tilde{d}\phi$, whose components in any frame are just the partial derivatives of $\phi$ with respect to the coordinates of that frame.
-- These lead to a transformation rule for one-forms naturally, and so all one forms are defines. Vectors are then defines as functions of one forms that return a scalar, and hence must transform in the opposite way to a one-form.
+- These lead to a transformation rule for one-forms naturally, and so all one forms are defined (as gradients of some scalar functions). Vectors are then defined as functions of one forms that return a scalar, and hence must transform in the opposite way to a one-form.
 - The two transformation matrices are inverses of each other.
 
 *Curves And Vectors*
 - A path is a connected series of points in the plane. A curve is a parametrized path.
 - The derivative of a scalar field along a curve is $\frac{d\phi}{ds}$ which is equal to the contraction between the gradient one-form $\tilde{d}\phi$ and the tangent vector $\vec{V}$. Hence  $\frac{d\phi}{ds}=\langle \tilde{d}\phi,\vec{V} \rangle$.
-- A curve has a unique tangent, since both the path and parametrization are given.
+- A curve has a unique tangent, since both the path and the parametrization are given.
 
 *Polar Coordinate Basis One-Forms*
 - $\vec{e}_{\alpha'}=\Lambda^{\beta}_{\alpha'}\vec{e}_{\beta} \rightarrow \vec{e}_{r}=\Lambda^{\beta}_{r}\vec{e}_{\beta}=\Lambda^{x}_{r}\vec{e}_{x} +\Lambda^{y}_{r}\vec{e}_{y}$   and analogously for theta.
@@ -86,7 +86,7 @@
 *The Christoffel Symbols*
 - The term $\frac{\partial \vec{e}_{\alpha}}{\partial x^{\beta}}$ is just a limit of a difference of a vector, so is itself a vector and hence can be expressed as $\frac{\partial \vec{e}_{\alpha}}{\partial x^{\beta}}= \Gamma^{\mu}_{\alpha \beta}\vec{e}_\mu$ 
 - The Christoffel symbols are just the coefficients of the derivatives of basis vectors. To calculate them in polar coordinates, one can express the polar vector basis in terms of the cartesian basis, take derivatives with respect to polar coordinates, and then convert back the result in terms of polar basis vectors. The cartesian basis is only used for the ease of taking derivatives (they are constant vectors). The coefficients one gets are then the Christoffel symbols.
-$vec$
+
 *The Covariant Derivative*
 - The derivative of a vector can now be written as $\frac{\partial \vec{V}}{\partial x^\beta}=\frac{\partial V^{\alpha}}{\partial x^{\beta}}\vec{e}_{\alpha}+V^{\alpha}\Gamma^{\mu}_{\alpha \beta}\vec{e}_\mu$ 
 - Relabeling the indices and then taking common: $\frac{\partial \vec{V}}{\partial x^\beta}=(\frac{\partial V^{\alpha}}{\partial x^{\beta}}+V^{\mu}\Gamma^{\alpha}_{\mu \beta})\vec{e}_\alpha$     
@@ -98,7 +98,8 @@ $vec$
 - Here, for a fixed $\beta$, we get a vector field where each vector has two components. However, since $\beta$ can take on two values, for a fixed vector, we get four components, and from a single vector field, we get two vector fields (one where the vectors are lets say the x-derivatives and the other where they are the -y derivatives of the original vectors). Hence, for each vector, we get 4 components, with two corresponding to each value $\beta$ can take.
 - The above comments suggest that this situation is in line with where a tensor can be useful, so let us define a $\begin{pmatrix}1\\ 1\end{pmatrix}$ tensor $\nabla \vec{V}=V^{\alpha}_{;\beta}\vec{e}_{\alpha}\tilde{\omega}^{\beta}$ 
 - This has components $(\nabla \vec{V})^{\alpha}_{\beta}=V^{\alpha}_{;\beta}$  (For a 2D space, these are 4 components)
-- Upon contraction of $\nabla \vec{V}$ with a basis vector $\vec{e}_{\beta}$: $$\langle \nabla \vec{V}, \vec{e}_{\beta} \rangle= V^{\alpha}_{;\beta}\vec{e}_{\alpha} \langle \tilde{\omega}^{\beta}, \vec{e}_{\beta} \rangle=V^{\alpha}_{;\beta}\vec{e}_{\alpha}=\frac{\partial \vec{V}}{\partial x^\beta}$$
+- A $\begin{pmatrix}1\\ 1\end{pmatrix}$ tensor provides a mapping between vectors..
+- $\nabla \vec{V}$ with a basis vector $\vec{e}_{\beta}$: $$\langle \nabla \vec{V}, \vec{e}_{\beta} \rangle= V^{\alpha}_{;\beta}\vec{e}_{\alpha} \langle \tilde{\omega}^{\beta}, \vec{e}_{\beta} \rangle=V^{\alpha}_{;\beta}\vec{e}_{\alpha}=\frac{\partial \vec{V}}{\partial x^\beta}$$
 - Hence, to specify the value of $\beta$, we need to contract it with $\vec{e}_{\beta}$ This is why for a fixed $\beta$ we get a single vector field, but for two values of $\beta$ we get a tensor field: one vector field corresponding to each $\beta$, to choose the value of $\beta$/vector field/components we want to pick, we have to feed in a vector, and then we get in the domain of a single vector field out of the two.
 - Hence, the derivative of a vector can be thought of as a result of the contraction between a one higher rank tensor with a specific basis vector. The Covariant derivative is the higher rank tensor. 
 - The components of the covariant derivative $(\nabla \vec{V})^{\alpha}_{\beta}=V^{\alpha}_{;\beta}$ can be obtained in two ways. One is to calculate $V^{\alpha}_{;\beta}=V^{\alpha}_{,\beta}+V^{\mu}\Gamma^{\alpha}_{\mu \beta}$  in whatever coordinate system one is in by knowledge of the Christoffel symbols. The other is to make use of the fact that they are tensor components and so can be obtained by transformation: transform them from cartesian coordinates (where there form is simple because of the vanishing of the Christoffel symbols) by use of transformation matrices.

@@ -81,6 +81,9 @@
 
 *Derivatives Of Basis Vectors*
 
+
+
+
 *Derivatives Of General Vectors*
 -  A general vector $\vec{V}$ has components on the polar basis of $(V^{r},V^{\theta})$. Its derivative with respect to $r$ is then: $\frac{\partial \vec{V}}{\partial r}=\frac{\partial V^{\alpha}}{\partial r}\vec{e}_{\alpha}+V^{\alpha}\frac{\partial \vec{e}_{\alpha}}{\partial r}$. More generally, in any coordinate basis, we have $$\frac{\partial \vec{V}}{\partial x^\beta}=\frac{\partial V^{\alpha}}{\partial x^{\beta}}\vec{e}_{\alpha}+V^{\alpha}\frac{\partial \vec{e}_{\alpha}}{\partial x^{\beta}}$$
 *The Christoffel Symbols*
@@ -93,6 +96,11 @@
 - Hence, the vector field $\frac{\partial \vec{V}}{\partial x^\beta}$ has components $V^{\alpha}_{;\beta}=V^{\alpha}_{,\beta}+V^{\mu}\Gamma^{\alpha}_{\mu \beta}$ 
 - Note that we interchange between considering $\vec{V}$ as a single vector and as a general vector in some vector field, in which case it could be any vector of some vector field, and so is a representation of that vector field. Then, any operations applied to it could be considered as applying those operations to all the vectors in that vector field which is equivalent to applying those operations to the vector field itself.
 - Hence, we have the derivative of a vector field $\vec{V}$: $$\frac{\partial \vec{V}}{\partial x^\beta}=V^{\alpha}_{;\beta}\vec{e}_{\alpha}$$
+Show that $\nabla \vec{V}$ is a $\begin{pmatrix}1\\ 1\end{pmatrix}$ tensor, as defined: $(\nabla \vec{V})^{\alpha}_{\beta}=V^{\alpha}_{;\beta}$  where $V^{\alpha}_{;\beta}=V^{\alpha}_{,\beta}+V^{\mu}\Gamma^{\alpha}_{\mu \beta}$ 
+Answer: We let $\nabla \vec{V}$ be a function of vectors and one-forms (assumption 1), and we define its action on its inputs of vectors and one-forms to be such that $\nabla \vec{V} (\vec{X};\tilde{\omega})=V^{\alpha}_{;\beta}X^{\beta}\omega_{\alpha}$ (assumption 2)
+Then, if we are able to show that the result is a scalar, and that the function is linear in both of its arguments, the proof will be done.
+- 
+- 
 - Since the operation of taking a derivative amounts a limit of a difference, the derivative of a vector gives another vector. This way, if we take derivatives of all vectors in a vector field- of a vector field, we get another vector field.
 - $A^{\beta}$ 
 - Here, for a fixed $\beta$, we get a vector field where each vector has two components. However, since $\beta$ can take on two values, for a fixed vector, we get four components, and from a single vector field, we get two vector fields (one where the vectors are lets say the x-derivatives and the other where they are the -y derivatives of the original vectors). Hence, for each vector, we get 4 components, with two corresponding to each value $\beta$ can take.

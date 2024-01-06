@@ -13,13 +13,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "A First Course In GR/CH 6 Curved Manifolds.md",
+                "file": "A First Course In GR/CH4 Perfect Fluids In Special Relativity.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "b6aa36126533767e",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.5.3"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "A First Course In GR/CH 6 Curved Manifolds.md",
+                "file": "A First Course In GR/CH4 Perfect Fluids In Special Relativity.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "A First Course In GR/CH 6 Curved Manifolds.md",
+                "file": "A First Course In GR/CH4 Perfect Fluids In Special Relativity.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "A First Course In GR/CH 6 Curved Manifolds.md"
+                "file": "A First Course In GR/CH4 Perfect Fluids In Special Relativity.md"
               }
             }
           }
@@ -146,11 +157,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f1111f19bc148f89",
+  "active": "b6aa36126533767e",
   "lastOpenFiles": [
     "A First Course In GR/CH5 Preface To Curvature.md",
-    "A First Course In GR/Ch3 Tensor Analysis In Special Relativity.md",
+    "A First Course In GR/CH4 Perfect Fluids In Special Relativity.md",
     "A First Course In GR/CH 6 Curved Manifolds.md",
+    "A First Course In GR/Ch3 Tensor Analysis In Special Relativity.md",
     "Pasted image 20231203135032.png",
     "Pasted image 20231203134355.png",
     "Pasted image 20231203134212.png",
@@ -162,7 +174,6 @@
     "Pasted image 20231129213344.png",
     "Pasted image 20231129213313.png",
     "Pasted image 20231129181501.png",
-    "A First Course In GR/CH4 Perfect Fluids In Special Relativity.md",
     "A First Course In GR/Ch1 Special Relativity.md",
     "A First Course In GR/Images.md",
     "Untitled.md",

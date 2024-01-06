@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "A First Course In GR/CH5 Preface To Curvature.md",
+                "file": "A First Course In GR/CH 6 Curved Manifolds.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "A First Course In GR/CH5 Preface To Curvature.md",
+                "file": "A First Course In GR/CH 6 Curved Manifolds.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "A First Course In GR/CH5 Preface To Curvature.md",
+                "file": "A First Course In GR/CH 6 Curved Manifolds.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "A First Course In GR/CH5 Preface To Curvature.md"
+                "file": "A First Course In GR/CH 6 Curved Manifolds.md"
               }
             }
           }
@@ -148,8 +148,8 @@
   },
   "active": "f1111f19bc148f89",
   "lastOpenFiles": [
-    "A First Course In GR/Ch3 Tensor Analysis In Special Relativity.md",
     "A First Course In GR/CH5 Preface To Curvature.md",
+    "A First Course In GR/Ch3 Tensor Analysis In Special Relativity.md",
     "A First Course In GR/CH 6 Curved Manifolds.md",
     "Pasted image 20231203135032.png",
     "Pasted image 20231203134355.png",

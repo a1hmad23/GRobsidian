@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "11a18258ec8f6360",
+        "id": "9593646efe44948a",
         "type": "tabs",
         "children": [
           {
-            "id": "f1111f19bc148f89",
+            "id": "b27af51335ef863e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "A First Course In GR/CH4 Perfect Fluids In Special Relativity.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b6aa36126533767e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "A First Course In GR/CH4 Perfect Fluids In Special Relativity.md",
+                "file": "Teach for Pakistan/Understanding TFP.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "A First Course In GR/CH4 Perfect Fluids In Special Relativity.md",
+                "file": "Teach for Pakistan/Understanding TFP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "A First Course In GR/CH4 Perfect Fluids In Special Relativity.md",
+                "file": "Teach for Pakistan/Understanding TFP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "A First Course In GR/CH4 Perfect Fluids In Special Relativity.md"
+                "file": "Teach for Pakistan/Understanding TFP.md"
               }
             }
           }
@@ -159,26 +146,32 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b6aa36126533767e",
+  "active": "b27af51335ef863e",
   "lastOpenFiles": [
+    "During fellowship.png",
+    "Pasted image 20240707171759.png",
+    "Fellow Outcomes.png",
+    "Student Outcomes.png",
+    "Theory of Change.png",
+    "TFP root cause analysis 2.png",
+    "TFP root cause analysis 1 2.png",
+    "TFP root cause analysis 1 1.png",
+    "TFP root cause analysis 1.png",
+    "Teaching root cause analysis.png",
+    "A First Course In GR/CH 6 Curved Manifolds.md",
+    "Teach for Pakistan/Understanding TFP.md",
+    "Teach for Pakistan/Understanding TFP/Untitled.md",
+    "Teach for Pakistan/Understanding TFP",
+    "Untitled.md",
+    "Untitled 1.md",
+    "Teach for Pakistan",
     "A First Course In GR/Ch3 Tensor Analysis In Special Relativity.md",
     "A First Course In GR/Ch1 Special Relativity.md",
     "A First Course In GR/CH5 Preface To Curvature.md",
     "A First Course In GR/CH4 Perfect Fluids In Special Relativity.md",
-    "A First Course In GR/CH 6 Curved Manifolds.md",
     "Pasted image 20231203135032.png",
-    "Pasted image 20231203134355.png",
-    "Pasted image 20231203134212.png",
-    "Pasted image 20231203132757.png",
-    "Pasted image 20231203004702.png",
     "A First Course In GR/Ch2 Vector Analysis In Special Relativity.md",
-    "Pasted image 20231130182940.png",
-    "Pasted image 20231129213400.png",
-    "Pasted image 20231129213344.png",
-    "Pasted image 20231129213313.png",
-    "Pasted image 20231129181501.png",
     "A First Course In GR/Images.md",
-    "Untitled.md",
     "A First Course In GR/Pasted image 2023111![[Pasted image 20231118164050.png.md",
     "A First Course In GR"
   ]
